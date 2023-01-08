@@ -1,0 +1,31 @@
+running egg_info
+writing ../../build/colreg_package/colreg_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/colreg_package/colreg_package.egg-info/dependency_links.txt
+writing entry points to ../../build/colreg_package/colreg_package.egg-info/entry_points.txt
+writing requirements to ../../build/colreg_package/colreg_package.egg-info/requires.txt
+writing top-level names to ../../build/colreg_package/colreg_package.egg-info/top_level.txt
+reading manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying colreg_package/tcpa_dcpa.py -> /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package
+copying colreg_package/avoidance_scenario.py -> /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package/tcpa_dcpa.py -> /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package
+copying /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package/avoidance_scenario.py -> /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package
+byte-compiling /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/tcpa_dcpa.py to tcpa_dcpa.cpython-310.pyc
+byte-compiling /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/avoidance_scenario.py to avoidance_scenario.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/colreg_package/colreg_package.egg-info to /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing avoidance_scenario script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+Installing main_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+Installing position script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+Installing target_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+Installing tcpa_dcpa script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+writing list of installed files to '/home/filip/ros2_ws/build/colreg_package/install.log'

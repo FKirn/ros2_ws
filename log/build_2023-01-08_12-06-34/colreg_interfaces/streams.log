@@ -1,0 +1,265 @@
+[0.024s] Invoking command in '/home/filip/ros2_ws/build/colreg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble /usr/bin/cmake --build /home/filip/ros2_ws/build/colreg_interfaces -- -j2 -l2
+[0.055s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.266s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.271s] -- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.298s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.301s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.309s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.321s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.343s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.471s] -- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+[0.616s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.814s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.115s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.227s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.253s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.275s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.275s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.275s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.291s] -- Added test 'lint_cmake' to check CMake code style
+[1.291s] -- Added test 'xmllint' to check XML markup files
+[1.309s] -- Configuring done
+[1.358s] -- Generating done
+[1.364s] -- Build files have been written to: /home/filip/ros2_ws/build/colreg_interfaces
+[1.388s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.399s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.757s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_generator_c[0m
+[1.769s] [  7%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__functions.c.o[0m
+[1.780s] [  7%] Built target colreg_interfaces__cpp
+[1.812s] [  7%] Built target ament_cmake_python_copy_colreg_interfaces
+[1.815s] [ 10%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c.o[0m
+[1.824s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.862s] [ 15%] [32m[1mLinking C shared library libcolreg_interfaces__rosidl_generator_c.so[0m
+[1.902s] [ 15%] Built target colreg_interfaces__rosidl_generator_c
+[1.913s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.170s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.182s] [ 20%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/colreg_interfaces/msg/detail/dds_fastrtps/ship_data__type_support.cpp.o[0m
+[2.199s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.212s] [ 23%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/colreg_interfaces/msg/detail/ship_data__type_support.cpp.o[0m
+[2.531s] [ 25%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/colreg_interfaces/msg/detail/avoidance_scenario__type_support.cpp.o[0m
+[2.543s] [ 28%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/colreg_interfaces/msg/detail/dds_fastrtps/avoidance_scenario__type_support.cpp.o[0m
+[2.842s] [ 30%] [32m[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.882s] [ 30%] Built target colreg_interfaces__rosidl_typesupport_introspection_cpp
+[2.893s] [ 33%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.903s] [ 35%] [32m[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.999s] [ 35%] Built target colreg_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.010s] [ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.147s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_cpp[0m
+[3.166s] [ 41%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/colreg_interfaces/msg/ship_data__type_support.cpp.o[0m
+[3.324s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.339s] [ 43%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__type_support_c.cpp.o[0m
+[3.414s] [ 46%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/colreg_interfaces/msg/avoidance_scenario__type_support.cpp.o[0m
+[3.638s] [ 48%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/avoidance_scenario__type_support_c.cpp.o[0m
+[3.651s] [ 51%] [32m[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_cpp.so[0m
+[3.695s] [ 51%] Built target colreg_interfaces__rosidl_typesupport_cpp
+[3.945s] [ 53%] [32m[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.956s] running egg_info
+[3.957s] writing colreg_interfaces.egg-info/PKG-INFO
+[3.963s] writing dependency_links to colreg_interfaces.egg-info/dependency_links.txt
+[3.963s] writing top-level names to colreg_interfaces.egg-info/top_level.txt
+[3.964s] reading manifest file 'colreg_interfaces.egg-info/SOURCES.txt'
+[3.965s] writing manifest file 'colreg_interfaces.egg-info/SOURCES.txt'
+[3.999s] [ 53%] Built target ament_cmake_python_build_colreg_interfaces_egg
+[4.012s] [ 56%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.036s] [ 56%] Built target colreg_interfaces__rosidl_typesupport_fastrtps_c
+[4.048s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.303s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_c[0m
+[4.315s] [ 61%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/colreg_interfaces/msg/ship_data__type_support.cpp.o[0m
+[4.320s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_introspection_c[0m
+[4.333s] [ 64%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/ship_data__type_support.c.o[0m
+[4.349s] [ 66%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/colreg_interfaces/msg/avoidance_scenario__type_support.cpp.o[0m
+[4.370s] [ 69%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/avoidance_scenario__type_support.c.o[0m
+[4.383s] [ 71%] [32m[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_c.so[0m
+[4.404s] [ 74%] [32m[1mLinking C shared library libcolreg_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.427s] [ 74%] Built target colreg_interfaces__rosidl_typesupport_c
+[4.441s] [ 74%] Built target colreg_interfaces__rosidl_typesupport_introspection_c
+[4.467s] [ 74%] Built target colreg_interfaces
+[4.490s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.034s] [ 76%] Built target colreg_interfaces__py
+[5.045s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_generator_py[0m
+[5.059s] [ 82%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/colreg_interfaces/msg/_ship_data_s.c.o[0m
+[5.060s] [ 82%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/colreg_interfaces/msg/_avoidance_scenario_s.c.o[0m
+[5.164s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/colreg_interfaces/libcolreg_interfaces__rosidl_generator_py.so[0m
+[5.207s] [ 84%] Built target colreg_interfaces__rosidl_generator_py
+[5.219s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.219s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[5.236s] [ 89%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.236s] [ 89%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.329s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.333s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.363s] [ 94%] Built target colreg_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.368s] [ 94%] Built target colreg_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.379s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_c__pyext[0m
+[5.394s] [ 97%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.483s] [100%] [32m[1mLinking C shared library rosidl_generator_py/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.517s] [100%] Built target colreg_interfaces__rosidl_typesupport_c__pyext
+[5.529s] Invoked command in '/home/filip/ros2_ws/build/colreg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble /usr/bin/cmake --build /home/filip/ros2_ws/build/colreg_interfaces -- -j2 -l2
+[5.685s] Invoking command in '/home/filip/ros2_ws/build/colreg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble /usr/bin/cmake --install /home/filip/ros2_ws/build/colreg_interfaces
+[5.695s] -- Install configuration: ""
+[5.695s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/rosidl_interfaces/colreg_interfaces
+[5.695s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces
+[5.696s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg
+[5.696s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/ship_data.h
+[5.696s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail
+[5.696s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__functions.c
+[5.696s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__struct.h
+[5.697s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__functions.c
+[5.697s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__type_support.h
+[5.697s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__functions.c
+[5.697s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__functions.h
+[5.697s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__type_support.h
+[5.697s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__type_support.h
+[5.698s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__struct.h
+[5.698s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__functions.h
+[5.712s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__struct.h
+[5.712s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__functions.h
+[5.713s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.713s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/avoidance_scenario.h
+[5.713s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/colreg.h
+[5.713s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/library_path.sh
+[5.713s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/library_path.dsv
+[5.714s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_c.so
+[5.714s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_c.so" to ""
+[5.714s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces
+[5.715s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg
+[5.715s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail
+[5.715s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h
+[5.715s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__rosidl_typesupport_fastrtps_c.h
+[5.715s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_fastrtps_c.h
+[5.715s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.716s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.716s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.716s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces
+[5.716s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg
+[5.717s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail
+[5.717s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__struct.hpp
+[5.717s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__traits.hpp
+[5.717s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__struct.hpp
+[5.718s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__builder.hpp
+[5.718s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__traits.hpp
+[5.718s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__builder.hpp
+[5.718s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__builder.hpp
+[5.718s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__traits.hpp
+[5.719s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__struct.hpp
+[5.719s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/avoidance_scenario.hpp
+[5.719s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/colreg.hpp
+[5.719s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/ship_data.hpp
+[5.719s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces
+[5.720s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg
+[5.720s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail
+[5.720s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__rosidl_typesupport_fastrtps_cpp.hpp
+[5.720s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_fastrtps_cpp.hpp
+[5.720s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_cpp.hpp
+[5.720s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/dds_fastrtps
+[5.721s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.721s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.721s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.722s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces
+[5.722s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg
+[5.722s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail
+[5.722s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__type_support.c
+[5.722s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__type_support.c
+[5.722s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__rosidl_typesupport_introspection_c.h
+[5.723s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__type_support.c
+[5.723s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_introspection_c.h
+[5.723s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_introspection_c.h
+[5.723s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.723s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_c.so
+[5.724s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.724s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_c.so
+[5.724s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_c.so" to ""
+[5.728s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces
+[5.729s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg
+[5.729s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail
+[5.729s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__type_support.cpp
+[5.729s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_introspection_cpp.hpp
+[5.729s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/avoidance_scenario__rosidl_typesupport_introspection_cpp.hpp
+[5.729s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/ship_data__type_support.cpp
+[5.729s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_introspection_cpp.hpp
+[5.730s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__type_support.cpp
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.730s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_cpp.so
+[5.730s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.730s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/pythonpath.sh
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/pythonpath.dsv
+[5.730s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[5.730s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.730s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.731s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_avoidance_scenario.py
+[5.731s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_colreg.py
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_avoidance_scenario_s.c
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_ship_data.py
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_ship_data_s.c
+[5.731s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_colreg_s.c
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/__init__.py
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/libcolreg_interfaces__rosidl_generator_py.so
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/__init__.py
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_c.c
+[5.731s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.764s] Listing '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces'...
+[5.764s] Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/__init__.py'...
+[5.764s] Listing '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg'...
+[5.764s] Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/__init__.py'...
+[5.764s] Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_avoidance_scenario.py'...
+[5.764s] Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_ship_data.py'...
+[5.768s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.768s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.768s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.768s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.769s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.769s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.769s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_py.so
+[5.770s] -- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_py.so" to ""
+[5.770s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/msg/ShipData.idl
+[5.776s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/msg/AvoidanceScenario.idl
+[5.776s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/msg/ShipData.msg
+[5.776s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/msg/AvoidanceScenario.msg
+[5.776s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/package_run_dependencies/colreg_interfaces
+[5.776s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/parent_prefix_path/colreg_interfaces
+[5.776s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/ament_prefix_path.sh
+[5.776s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/ament_prefix_path.dsv
+[5.777s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/path.sh
+[5.777s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/path.dsv
+[5.777s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.bash
+[5.777s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.sh
+[5.777s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.zsh
+[5.777s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.dsv
+[5.777s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/package.dsv
+[5.777s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/packages/colreg_interfaces
+[5.777s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_cExport.cmake
+[5.778s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.778s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.778s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.778s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_cppExport.cmake
+[5.778s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.778s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.784s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.785s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.785s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cExport.cmake
+[5.785s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.785s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.785s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.785s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cppExport.cmake
+[5.786s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.786s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_pyExport.cmake
+[5.786s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.787s] -- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.787s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.787s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.787s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.787s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.787s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.788s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.788s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfacesConfig.cmake
+[5.788s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfacesConfig-version.cmake
+[5.788s] -- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/package.xml
+[5.788s] Invoked command in '/home/filip/ros2_ws/build/colreg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble /usr/bin/cmake --install /home/filip/ros2_ws/build/colreg_interfaces

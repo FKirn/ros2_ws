@@ -1,0 +1,30 @@
+[0.607s] Invoking command in '/home/filip/ros2_ws/src/colreg_package': PYTHONPATH=/home/filip/ros2_ws/build/colreg_package/prefix_override:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colreg_package build --build-base /home/filip/ros2_ws/build/colreg_package/build install --record /home/filip/ros2_ws/build/colreg_package/install.log --single-version-externally-managed
+[0.842s] running egg_info
+[0.843s] writing ../../build/colreg_package/colreg_package.egg-info/PKG-INFO
+[0.844s] writing dependency_links to ../../build/colreg_package/colreg_package.egg-info/dependency_links.txt
+[0.844s] writing entry points to ../../build/colreg_package/colreg_package.egg-info/entry_points.txt
+[0.844s] writing requirements to ../../build/colreg_package/colreg_package.egg-info/requires.txt
+[0.845s] writing top-level names to ../../build/colreg_package/colreg_package.egg-info/top_level.txt
+[0.846s] reading manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+[0.847s] writing manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+[0.848s] running build
+[0.848s] running build_py
+[0.848s] copying colreg_package/tcpa_dcpa.py -> /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package
+[0.849s] running install
+[0.849s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.849s]   warnings.warn(
+[0.849s] running install_lib
+[0.850s] copying /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package/tcpa_dcpa.py -> /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package
+[0.851s] byte-compiling /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/tcpa_dcpa.py to tcpa_dcpa.cpython-310.pyc
+[0.851s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (tcpa_dcpa.py, line 23)
+[0.851s] running install_data
+[0.852s] running install_egg_info
+[0.854s] removing '/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.854s] Copying ../../build/colreg_package/colreg_package.egg-info to /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info
+[0.855s] running install_scripts
+[0.873s] Installing main_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[0.873s] Installing obstacle_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[0.874s] Installing position script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[0.874s] Installing tcpa_dcpa script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[0.874s] writing list of installed files to '/home/filip/ros2_ws/build/colreg_package/install.log'
+[0.896s] Invoked command in '/home/filip/ros2_ws/src/colreg_package' returned '0': PYTHONPATH=/home/filip/ros2_ws/build/colreg_package/prefix_override:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colreg_package build --build-base /home/filip/ros2_ws/build/colreg_package/build install --record /home/filip/ros2_ws/build/colreg_package/install.log --single-version-externally-managed

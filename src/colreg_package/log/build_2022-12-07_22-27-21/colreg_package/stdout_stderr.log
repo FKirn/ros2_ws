@@ -1,0 +1,41 @@
+running egg_info
+creating build/colreg_package/colreg_package.egg-info
+writing build/colreg_package/colreg_package.egg-info/PKG-INFO
+writing dependency_links to build/colreg_package/colreg_package.egg-info/dependency_links.txt
+writing entry points to build/colreg_package/colreg_package.egg-info/entry_points.txt
+writing requirements to build/colreg_package/colreg_package.egg-info/requires.txt
+writing top-level names to build/colreg_package/colreg_package.egg-info/top_level.txt
+writing manifest file 'build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+reading manifest file 'build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+writing manifest file 'build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build
+creating /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib
+creating /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package
+copying colreg_package/turtle_control.py -> /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package
+copying colreg_package/__init__.py -> /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package
+copying colreg_package/turtle_positioning.py -> /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package
+copying /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package/turtle_control.py -> /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package
+copying /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package/__init__.py -> /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package
+copying /home/filip/ros2_ws/src/colreg_package/build/colreg_package/build/lib/colreg_package/turtle_positioning.py -> /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package
+byte-compiling /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package/turtle_control.py to turtle_control.cpython-310.pyc
+byte-compiling /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package/turtle_positioning.py to turtle_positioning.cpython-310.pyc
+running install_data
+creating /home/filip/ros2_ws/src/colreg_package/install/colreg_package/share/ament_index
+creating /home/filip/ros2_ws/src/colreg_package/install/colreg_package/share/ament_index/resource_index
+creating /home/filip/ros2_ws/src/colreg_package/install/colreg_package/share/ament_index/resource_index/packages
+copying resource/colreg_package -> /home/filip/ros2_ws/src/colreg_package/install/colreg_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/filip/ros2_ws/src/colreg_package/install/colreg_package/share/colreg_package
+copying launch/demo.launch.py -> /home/filip/ros2_ws/src/colreg_package/install/colreg_package/share/colreg_package
+running install_egg_info
+Copying build/colreg_package/colreg_package.egg-info to /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing position script to /home/filip/ros2_ws/src/colreg_package/install/colreg_package/lib/colreg_package
+writing list of installed files to '/home/filip/ros2_ws/src/colreg_package/build/colreg_package/install.log'

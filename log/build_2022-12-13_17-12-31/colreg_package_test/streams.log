@@ -1,0 +1,26 @@
+[1.441s] Invoking command in '/home/filip/ros2_ws/src/colreg_package_test': PYTHONPATH=/home/filip/ros2_ws/build/colreg_package_test/prefix_override:/home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colreg_package_test build --build-base /home/filip/ros2_ws/build/colreg_package_test/build install --record /home/filip/ros2_ws/build/colreg_package_test/install.log --single-version-externally-managed
+[1.711s] running egg_info
+[1.712s] writing ../../build/colreg_package_test/colreg_package_test.egg-info/PKG-INFO
+[1.714s] writing dependency_links to ../../build/colreg_package_test/colreg_package_test.egg-info/dependency_links.txt
+[1.715s] writing entry points to ../../build/colreg_package_test/colreg_package_test.egg-info/entry_points.txt
+[1.715s] writing requirements to ../../build/colreg_package_test/colreg_package_test.egg-info/requires.txt
+[1.716s] writing top-level names to ../../build/colreg_package_test/colreg_package_test.egg-info/top_level.txt
+[1.721s] reading manifest file '../../build/colreg_package_test/colreg_package_test.egg-info/SOURCES.txt'
+[1.723s] writing manifest file '../../build/colreg_package_test/colreg_package_test.egg-info/SOURCES.txt'
+[1.723s] running build
+[1.723s] running build_py
+[1.728s] running install
+[1.730s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.730s]   warnings.warn(
+[1.731s] running install_lib
+[1.736s] running install_data
+[1.737s] running install_egg_info
+[1.740s] removing '/home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages/colreg_package_test-0.0.0-py3.10.egg-info' (and everything under it)
+[1.741s] Copying ../../build/colreg_package_test/colreg_package_test.egg-info to /home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages/colreg_package_test-0.0.0-py3.10.egg-info
+[1.743s] running install_scripts
+[1.764s] Installing main_ship_control script to /home/filip/ros2_ws/install/colreg_package_test/lib/colreg_package_test
+[1.776s] Installing obstacle_ship_control script to /home/filip/ros2_ws/install/colreg_package_test/lib/colreg_package_test
+[1.777s] Installing position script to /home/filip/ros2_ws/install/colreg_package_test/lib/colreg_package_test
+[1.777s] Installing tcpa_dcpa script to /home/filip/ros2_ws/install/colreg_package_test/lib/colreg_package_test
+[1.778s] writing list of installed files to '/home/filip/ros2_ws/build/colreg_package_test/install.log'
+[1.834s] Invoked command in '/home/filip/ros2_ws/src/colreg_package_test' returned '0': PYTHONPATH=/home/filip/ros2_ws/build/colreg_package_test/prefix_override:/home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colreg_package_test build --build-base /home/filip/ros2_ws/build/colreg_package_test/build install --record /home/filip/ros2_ws/build/colreg_package_test/install.log --single-version-externally-managed

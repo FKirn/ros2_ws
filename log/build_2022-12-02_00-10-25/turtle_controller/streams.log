@@ -1,0 +1,26 @@
+[0.587s] Invoking command in '/home/filip/ros2_ws/src/turtle_controller': PYTHONPATH=/home/filip/ros2_ws/build/turtle_controller/prefix_override:/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_controller build --build-base /home/filip/ros2_ws/build/turtle_controller/build install --record /home/filip/ros2_ws/build/turtle_controller/install.log --single-version-externally-managed
+[0.823s] running egg_info
+[0.824s] writing ../../build/turtle_controller/turtle_controller.egg-info/PKG-INFO
+[0.824s] writing dependency_links to ../../build/turtle_controller/turtle_controller.egg-info/dependency_links.txt
+[0.825s] writing entry points to ../../build/turtle_controller/turtle_controller.egg-info/entry_points.txt
+[0.825s] writing requirements to ../../build/turtle_controller/turtle_controller.egg-info/requires.txt
+[0.826s] writing top-level names to ../../build/turtle_controller/turtle_controller.egg-info/top_level.txt
+[0.828s] reading manifest file '../../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+[0.829s] writing manifest file '../../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+[0.834s] running build
+[0.834s] running build_py
+[0.834s] copying turtle_controller/turtle_control_script.py -> /home/filip/ros2_ws/build/turtle_controller/build/lib/turtle_controller
+[0.834s] running install
+[0.835s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.835s]   warnings.warn(
+[0.835s] running install_lib
+[0.835s] copying /home/filip/ros2_ws/build/turtle_controller/build/lib/turtle_controller/turtle_control_script.py -> /home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller
+[0.835s] byte-compiling /home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller/turtle_control_script.py to turtle_control_script.cpython-310.pyc
+[0.835s] running install_data
+[0.835s] running install_egg_info
+[0.836s] removing '/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.836s] Copying ../../build/turtle_controller/turtle_controller.egg-info to /home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info
+[0.837s] running install_scripts
+[0.856s] Installing turtle script to /home/filip/ros2_ws/install/turtle_controller/lib/turtle_controller
+[0.857s] writing list of installed files to '/home/filip/ros2_ws/build/turtle_controller/install.log'
+[0.880s] Invoked command in '/home/filip/ros2_ws/src/turtle_controller' returned '0': PYTHONPATH=/home/filip/ros2_ws/build/turtle_controller/prefix_override:/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_controller build --build-base /home/filip/ros2_ws/build/turtle_controller/build install --record /home/filip/ros2_ws/build/turtle_controller/install.log --single-version-externally-managed

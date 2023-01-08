@@ -1,0 +1,3 @@
+[console_scripts]
+turtle_colreg = py_pubsub.publisher_member_function:main
+

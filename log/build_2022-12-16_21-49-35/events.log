@@ -1,0 +1,299 @@
+[0.000000] (-) TimerEvent: {}
+[0.000294] (colreg_interfaces) JobQueued: {'identifier': 'colreg_interfaces', 'dependencies': OrderedDict()}
+[0.000416] (colreg_package) JobQueued: {'identifier': 'colreg_package', 'dependencies': OrderedDict()}
+[0.000474] (colreg_interfaces) JobStarted: {'identifier': 'colreg_interfaces'}
+[0.010919] (colreg_package) JobStarted: {'identifier': 'colreg_package'}
+[0.023207] (colreg_interfaces) JobProgress: {'identifier': 'colreg_interfaces', 'progress': 'cmake'}
+[0.027535] (colreg_interfaces) JobProgress: {'identifier': 'colreg_interfaces', 'progress': 'build'}
+[0.027640] (colreg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/filip/ros2_ws/build/colreg_interfaces', '--', '-j2', '-l2'], 'cwd': '/home/filip/ros2_ws/build/colreg_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'filip'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/filip'), ('OLDPWD', '/home/filip'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('MANAGERPID', '1079'), ('SYSTEMD_EXEC_PID', '1241'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2582'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/filip/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'filip'), ('JOURNAL_STREAM', '8:40401'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'filip'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/filip-virtual-machine:@/tmp/.ICE-unix/1218,unix/filip-virtual-machine:/tmp/.ICE-unix/1218'), ('INVOCATION_ID', 'e79866ec75814c5197f1875300d55987'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EWK0W1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fc504b9f-dc5c-486e-b207-a14b761e9930'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/filip/ros2_ws/build/colreg_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/filip/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble')]), 'shell': False}
+[0.065626] (colreg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.096552] (-) TimerEvent: {}
+[0.197548] (-) TimerEvent: {}
+[0.247154] (colreg_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.276900] (colreg_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.280213] (colreg_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.288097] (colreg_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.298430] (-) TimerEvent: {}
+[0.301802] (colreg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.320931] (colreg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.398990] (-) TimerEvent: {}
+[0.474635] (colreg_interfaces) StdoutLine: {'line': b'-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)\n'}
+[0.499479] (-) TimerEvent: {}
+[0.599986] (-) TimerEvent: {}
+[0.623494] (colreg_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/colreg_package', 'build', '--build-base', '/home/filip/ros2_ws/build/colreg_package/build', 'install', '--record', '/home/filip/ros2_ws/build/colreg_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/filip/ros2_ws/src/colreg_package', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'filip', 'LC_TIME': 'hr_HR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/filip', 'OLDPWD': '/home/filip', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'hr_HR.UTF-8', 'MANAGERPID': '1079', 'SYSTEMD_EXEC_PID': '1241', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2582', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/filip/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'filip', 'JOURNAL_STREAM': '8:40401', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'filip', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/filip-virtual-machine:@/tmp/.ICE-unix/1218,unix/filip-virtual-machine:/tmp/.ICE-unix/1218', 'INVOCATION_ID': 'e79866ec75814c5197f1875300d55987', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'hr_HR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'hr_HR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.EWK0W1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'hr_HR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:fc504b9f-dc5c-486e-b207-a14b761e9930', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'hr_HR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'hr_HR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/filip/ros2_ws/build/colreg_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/filip/ros2_ws/build/colreg_package/prefix_override:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:/home/filip/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'hr_HR.UTF-8', 'LC_PAPER': 'hr_HR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.644681] (colreg_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.700363] (-) TimerEvent: {}
+[0.713689] (colreg_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.800599] (-) TimerEvent: {}
+[0.867172] (colreg_package) StdoutLine: {'line': b'running egg_info\n'}
+[0.867993] (colreg_package) StdoutLine: {'line': b'writing ../../build/colreg_package/colreg_package.egg-info/PKG-INFO\n'}
+[0.868430] (colreg_package) StdoutLine: {'line': b'writing dependency_links to ../../build/colreg_package/colreg_package.egg-info/dependency_links.txt\n'}
+[0.868805] (colreg_package) StdoutLine: {'line': b'writing entry points to ../../build/colreg_package/colreg_package.egg-info/entry_points.txt\n'}
+[0.869188] (colreg_package) StdoutLine: {'line': b'writing requirements to ../../build/colreg_package/colreg_package.egg-info/requires.txt\n'}
+[0.869871] (colreg_package) StdoutLine: {'line': b'writing top-level names to ../../build/colreg_package/colreg_package.egg-info/top_level.txt\n'}
+[0.872219] (colreg_package) StdoutLine: {'line': b"reading manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'\n"}
+[0.873158] (colreg_package) StdoutLine: {'line': b"writing manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'\n"}
+[0.873652] (colreg_package) StdoutLine: {'line': b'running build\n'}
+[0.873745] (colreg_package) StdoutLine: {'line': b'running build_py\n'}
+[0.874140] (colreg_package) StdoutLine: {'line': b'running install\n'}
+[0.874338] (colreg_package) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[0.874461] (colreg_package) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.874702] (colreg_package) StdoutLine: {'line': b'running install_lib\n'}
+[0.875948] (colreg_package) StdoutLine: {'line': b'running install_data\n'}
+[0.876577] (colreg_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.878162] (colreg_package) StdoutLine: {'line': b"removing '/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.878519] (colreg_package) StdoutLine: {'line': b'Copying ../../build/colreg_package/colreg_package.egg-info to /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info\n'}
+[0.879309] (colreg_package) StdoutLine: {'line': b'running install_scripts\n'}
+[0.898923] (colreg_package) StdoutLine: {'line': b'Installing main_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package\n'}
+[0.899273] (colreg_package) StdoutLine: {'line': b'Installing obstacle_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package\n'}
+[0.899545] (colreg_package) StdoutLine: {'line': b'Installing position script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package\n'}
+[0.899867] (colreg_package) StdoutLine: {'line': b'Installing tcpa_dcpa script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package\n'}
+[0.900401] (colreg_package) StdoutLine: {'line': b"writing list of installed files to '/home/filip/ros2_ws/build/colreg_package/install.log'\n"}
+[0.900621] (-) TimerEvent: {}
+[0.922643] (colreg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.924910] (colreg_package) CommandEnded: {'returncode': 0}
+[0.942032] (colreg_package) JobEnded: {'identifier': 'colreg_package', 'rc': 0}
+[1.001968] (-) TimerEvent: {}
+[1.102634] (-) TimerEvent: {}
+[1.203517] (-) TimerEvent: {}
+[1.219609] (colreg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.305221] (-) TimerEvent: {}
+[1.343056] (colreg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.360519] (colreg_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.380392] (colreg_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.380556] (colreg_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.380623] (colreg_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.395165] (colreg_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.396120] (colreg_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.399296] (colreg_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.405476] (-) TimerEvent: {}
+[1.438941] (colreg_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.445663] (colreg_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/filip/ros2_ws/build/colreg_interfaces\n'}
+[1.471924] (colreg_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.489050] (colreg_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.506108] (-) TimerEvent: {}
+[1.606933] (-) TimerEvent: {}
+[1.707451] (-) TimerEvent: {}
+[1.742639] (colreg_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/colreg__functions.c.o\x1b[0m\n'}
+[1.791264] (colreg_interfaces) StdoutLine: {'line': b'[  9%] Built target colreg_interfaces__cpp\n'}
+[1.801747] (colreg_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libcolreg_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.808117] (-) TimerEvent: {}
+[1.819965] (colreg_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_colreg_interfaces\n'}
+[1.830965] (colreg_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.849447] (colreg_interfaces) StdoutLine: {'line': b'[ 16%] Built target colreg_interfaces__rosidl_generator_c\n'}
+[1.864602] (colreg_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.908515] (-) TimerEvent: {}
+[2.009773] (-) TimerEvent: {}
+[2.066204] (colreg_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/colreg_interfaces/msg/colreg__type_support.cpp.o\x1b[0m\n'}
+[2.110344] (-) TimerEvent: {}
+[2.118130] (colreg_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/colreg_interfaces/msg/detail/dds_fastrtps/colreg__type_support.cpp.o\x1b[0m\n'}
+[2.210812] (-) TimerEvent: {}
+[2.311706] (-) TimerEvent: {}
+[2.351624] (colreg_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.398014] (colreg_interfaces) StdoutLine: {'line': b'[ 29%] Built target colreg_interfaces__rosidl_typesupport_cpp\n'}
+[2.409159] (colreg_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.412617] (-) TimerEvent: {}
+[2.513553] (-) TimerEvent: {}
+[2.541245] (colreg_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.613995] (-) TimerEvent: {}
+[2.630236] (colreg_interfaces) StdoutLine: {'line': b'[ 35%] Built target colreg_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.640907] (colreg_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.684704] (colreg_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/colreg__type_support.c.o\x1b[0m\n'}
+[2.714458] (-) TimerEvent: {}
+[2.718371] (colreg_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking C shared library libcolreg_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.760782] (colreg_interfaces) StdoutLine: {'line': b'[ 45%] Built target colreg_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.773106] (colreg_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.814669] (-) TimerEvent: {}
+[2.863272] (colreg_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/colreg_interfaces/msg/colreg__type_support.cpp.o\x1b[0m\n'}
+[2.891885] (colreg_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.914990] (-) TimerEvent: {}
+[2.929341] (colreg_interfaces) StdoutLine: {'line': b'[ 54%] Built target colreg_interfaces__rosidl_typesupport_c\n'}
+[3.015367] (-) TimerEvent: {}
+[3.036991] (colreg_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/colreg_interfaces/msg/detail/colreg__type_support.cpp.o\x1b[0m\n'}
+[3.115704] (-) TimerEvent: {}
+[3.185014] (colreg_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.185831] (colreg_interfaces) StdoutLine: {'line': b'creating colreg_interfaces.egg-info\n'}
+[3.186137] (colreg_interfaces) StdoutLine: {'line': b'writing colreg_interfaces.egg-info/PKG-INFO\n'}
+[3.186346] (colreg_interfaces) StdoutLine: {'line': b'writing dependency_links to colreg_interfaces.egg-info/dependency_links.txt\n'}
+[3.186578] (colreg_interfaces) StdoutLine: {'line': b'writing top-level names to colreg_interfaces.egg-info/top_level.txt\n'}
+[3.186889] (colreg_interfaces) StdoutLine: {'line': b"writing manifest file 'colreg_interfaces.egg-info/SOURCES.txt'\n"}
+[3.188710] (colreg_interfaces) StdoutLine: {'line': b"reading manifest file 'colreg_interfaces.egg-info/SOURCES.txt'\n"}
+[3.189320] (colreg_interfaces) StdoutLine: {'line': b"writing manifest file 'colreg_interfaces.egg-info/SOURCES.txt'\n"}
+[3.214698] (colreg_interfaces) StdoutLine: {'line': b'[ 58%] Built target ament_cmake_python_build_colreg_interfaces_egg\n'}
+[3.216277] (-) TimerEvent: {}
+[3.225009] (colreg_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.316515] (-) TimerEvent: {}
+[3.413705] (colreg_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.416992] (-) TimerEvent: {}
+[3.460963] (colreg_interfaces) StdoutLine: {'line': b'[ 64%] Built target colreg_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.494923] (colreg_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/colreg__type_support_c.cpp.o\x1b[0m\n'}
+[3.517691] (-) TimerEvent: {}
+[3.619095] (-) TimerEvent: {}
+[3.720415] (-) TimerEvent: {}
+[3.801098] (colreg_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.821666] (-) TimerEvent: {}
+[3.884988] (colreg_interfaces) StdoutLine: {'line': b'[ 70%] Built target colreg_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.905265] (colreg_interfaces) StdoutLine: {'line': b'[ 70%] Built target colreg_interfaces\n'}
+[3.923038] (-) TimerEvent: {}
+[3.927323] (colreg_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.024189] (-) TimerEvent: {}
+[4.125024] (-) TimerEvent: {}
+[4.225446] (-) TimerEvent: {}
+[4.286386] (colreg_interfaces) StdoutLine: {'line': b'[ 74%] Built target colreg_interfaces__py\n'}
+[4.309349] (colreg_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/colreg_interfaces/msg/_colreg_s.c.o\x1b[0m\n'}
+[4.325612] (-) TimerEvent: {}
+[4.426301] (-) TimerEvent: {}
+[4.519052] (colreg_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/colreg_interfaces/libcolreg_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[4.526971] (-) TimerEvent: {}
+[4.558748] (colreg_interfaces) StdoutLine: {'line': b'[ 80%] Built target colreg_interfaces__rosidl_generator_py\n'}
+[4.585603] (colreg_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.586120] (colreg_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.627459] (-) TimerEvent: {}
+[4.680588] (colreg_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.683626] (colreg_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.716171] (colreg_interfaces) StdoutLine: {'line': b'[ 93%] Built target colreg_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.716581] (colreg_interfaces) StdoutLine: {'line': b'[ 93%] Built target colreg_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.727692] (-) TimerEvent: {}
+[4.738983] (colreg_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.828389] (colreg_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.828561] (-) TimerEvent: {}
+[4.868058] (colreg_interfaces) StdoutLine: {'line': b'[100%] Built target colreg_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.880332] (colreg_interfaces) CommandEnded: {'returncode': 0}
+[4.928862] (-) TimerEvent: {}
+[4.992392] (colreg_interfaces) JobProgress: {'identifier': 'colreg_interfaces', 'progress': 'install'}
+[5.001842] (colreg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/filip/ros2_ws/build/colreg_interfaces'], 'cwd': '/home/filip/ros2_ws/build/colreg_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'filip'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/filip'), ('OLDPWD', '/home/filip'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('MANAGERPID', '1079'), ('SYSTEMD_EXEC_PID', '1241'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2582'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/filip/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'filip'), ('JOURNAL_STREAM', '8:40401'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'filip'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/filip-virtual-machine:@/tmp/.ICE-unix/1218,unix/filip-virtual-machine:/tmp/.ICE-unix/1218'), ('INVOCATION_ID', 'e79866ec75814c5197f1875300d55987'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EWK0W1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fc504b9f-dc5c-486e-b207-a14b761e9930'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/filip/ros2_ws/build/colreg_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/filip/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/home/filip/ros2_ws/install/colreg_package_test/lib/python3.10/site-packages:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble')]), 'shell': False}
+[5.010560] (colreg_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.010889] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/rosidl_interfaces/colreg_interfaces\n'}
+[5.011070] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces\n'}
+[5.011303] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg\n'}
+[5.011465] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail\n'}
+[5.011630] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__functions.c\n'}
+[5.011816] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__functions.h\n'}
+[5.012047] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__type_support.h\n'}
+[5.012261] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__struct.h\n'}
+[5.012404] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.012602] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/colreg.h\n'}
+[5.012827] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/library_path.sh\n'}
+[5.013011] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/library_path.dsv\n'}
+[5.013233] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_c.so\n'}
+[5.013755] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_c.so" to ""\n'}
+[5.014270] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces\n'}
+[5.014388] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg\n'}
+[5.014559] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail\n'}
+[5.014746] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_fastrtps_c.h\n'}
+[5.014893] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.015162] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.015423] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.015720] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces\n'}
+[5.015948] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg\n'}
+[5.016063] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail\n'}
+[5.016377] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__builder.hpp\n'}
+[5.016469] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__traits.hpp\n'}
+[5.016614] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__struct.hpp\n'}
+[5.016760] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/colreg.hpp\n'}
+[5.016929] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces\n'}
+[5.017143] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg\n'}
+[5.017294] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail\n'}
+[5.017594] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.017740] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/dds_fastrtps\n'}
+[5.018083] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.018367] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.018787] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.019061] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces\n'}
+[5.019154] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg\n'}
+[5.019310] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail\n'}
+[5.019587] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__type_support.c\n'}
+[5.019858] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_introspection_c.h\n'}
+[5.020139] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.020326] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.020631] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.020911] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_c.so\n'}
+[5.021182] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.021484] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces\n'}
+[5.021641] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg\n'}
+[5.021926] (colreg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail\n'}
+[5.022020] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.022225] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/include/colreg_interfaces/colreg_interfaces/msg/detail/colreg__type_support.cpp\n'}
+[5.022445] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.022758] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.023033] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.023329] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.023602] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/pythonpath.sh\n'}
+[5.023831] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/pythonpath.dsv\n'}
+[5.024082] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info\n'}
+[5.024260] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.024492] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.024707] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.024867] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.025060] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces\n'}
+[5.025381] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.025625] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.025859] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.026189] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.026438] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg\n'}
+[5.026764] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_colreg.py\n'}
+[5.027059] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_colreg_s.c\n'}
+[5.027242] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/__init__.py\n'}
+[5.027530] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/libcolreg_interfaces__rosidl_generator_py.so\n'}
+[5.027836] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/__init__.py\n'}
+[5.027993] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.028134] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/_colreg_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.029554] (-) TimerEvent: {}
+[5.064542] (colreg_interfaces) StdoutLine: {'line': b"Listing '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces'...\n"}
+[5.064758] (colreg_interfaces) StdoutLine: {'line': b"Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/__init__.py'...\n"}
+[5.064830] (colreg_interfaces) StdoutLine: {'line': b"Listing '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg'...\n"}
+[5.064892] (colreg_interfaces) StdoutLine: {'line': b"Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/__init__.py'...\n"}
+[5.064991] (colreg_interfaces) StdoutLine: {'line': b"Compiling '/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/msg/_colreg.py'...\n"}
+[5.071898] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.072218] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.072580] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.072824] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.073058] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.073443] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/local/lib/python3.10/dist-packages/colreg_interfaces/colreg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.073711] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_py.so\n'}
+[5.074022] (colreg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/filip/ros2_ws/install/colreg_interfaces/lib/libcolreg_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.074374] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/msg/Colreg.idl\n'}
+[5.074467] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/msg/Colreg.msg\n'}
+[5.074650] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/package_run_dependencies/colreg_interfaces\n'}
+[5.074868] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/parent_prefix_path/colreg_interfaces\n'}
+[5.075057] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/ament_prefix_path.sh\n'}
+[5.075245] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.076249] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/path.sh\n'}
+[5.076475] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/environment/path.dsv\n'}
+[5.076717] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.bash\n'}
+[5.076906] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.sh\n'}
+[5.077100] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.zsh\n'}
+[5.077306] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/local_setup.dsv\n'}
+[5.077645] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/package.dsv\n'}
+[5.077887] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/ament_index/resource_index/packages/colreg_interfaces\n'}
+[5.078117] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.078309] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.078527] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.078725] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.078923] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.079123] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.079313] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.079541] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.079735] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.079934] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.080124] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.080328] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.080544] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.080744] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.080946] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.081143] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.081372] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/export_colreg_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.081726] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.081917] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.082101] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.082296] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.082490] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.082688] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.082884] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.083074] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfacesConfig.cmake\n'}
+[5.083305] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/cmake/colreg_interfacesConfig-version.cmake\n'}
+[5.083479] (colreg_interfaces) StdoutLine: {'line': b'-- Installing: /home/filip/ros2_ws/install/colreg_interfaces/share/colreg_interfaces/package.xml\n'}
+[5.085547] (colreg_interfaces) CommandEnded: {'returncode': 0}
+[5.129684] (-) TimerEvent: {}
+[5.219432] (colreg_interfaces) JobEnded: {'identifier': 'colreg_interfaces', 'rc': 0}
+[5.220725] (-) EventReactorShutdown: {}

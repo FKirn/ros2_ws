@@ -1,0 +1,7 @@
+[console_scripts]
+avoidance_scenario = colreg_package.avoidance_scenario:main
+main_ship_control = colreg_package.main_ship_control:main
+position = colreg_package.turtle_positioning:main
+target_ship_control = colreg_package.target_ship_control:main
+tcpa_dcpa = colreg_package.tcpa_dcpa:main
+

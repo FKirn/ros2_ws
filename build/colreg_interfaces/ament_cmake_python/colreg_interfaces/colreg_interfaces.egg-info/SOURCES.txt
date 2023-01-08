@@ -1,0 +1,10 @@
+setup.py
+colreg_interfaces/__init__.py
+colreg_interfaces.egg-info/PKG-INFO
+colreg_interfaces.egg-info/SOURCES.txt
+colreg_interfaces.egg-info/dependency_links.txt
+colreg_interfaces.egg-info/top_level.txt
+colreg_interfaces/msg/__init__.py
+colreg_interfaces/msg/_avoidance_scenario.py
+colreg_interfaces/msg/_colreg.py
+colreg_interfaces/msg/_ship_data.py

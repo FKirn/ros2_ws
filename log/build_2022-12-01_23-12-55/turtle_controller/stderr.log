@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller/turtle_control_script.py", line 41
+    def callback_call_service(self,future)
+                                          ^
+SyntaxError: expected ':'
+

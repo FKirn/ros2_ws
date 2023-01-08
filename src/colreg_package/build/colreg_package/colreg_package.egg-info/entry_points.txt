@@ -1,0 +1,3 @@
+[console_scripts]
+position = colreg_package.turtle_positioning:main
+

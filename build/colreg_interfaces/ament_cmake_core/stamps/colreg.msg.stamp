@@ -1,0 +1,4 @@
+geometry_msgs/Point position_ship
+
+float32 tcpa
+float32 dcpa

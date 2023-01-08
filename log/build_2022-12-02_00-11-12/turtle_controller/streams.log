@@ -1,0 +1,23 @@
+[0.591s] Invoking command in '/home/filip/ros2_ws/src/turtle_controller': PYTHONPATH=/home/filip/ros2_ws/build/turtle_controller/prefix_override:/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_controller build --build-base /home/filip/ros2_ws/build/turtle_controller/build install --record /home/filip/ros2_ws/build/turtle_controller/install.log --single-version-externally-managed
+[0.840s] running egg_info
+[0.841s] writing ../../build/turtle_controller/turtle_controller.egg-info/PKG-INFO
+[0.841s] writing dependency_links to ../../build/turtle_controller/turtle_controller.egg-info/dependency_links.txt
+[0.842s] writing entry points to ../../build/turtle_controller/turtle_controller.egg-info/entry_points.txt
+[0.842s] writing requirements to ../../build/turtle_controller/turtle_controller.egg-info/requires.txt
+[0.842s] writing top-level names to ../../build/turtle_controller/turtle_controller.egg-info/top_level.txt
+[0.844s] reading manifest file '../../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+[0.845s] writing manifest file '../../build/turtle_controller/turtle_controller.egg-info/SOURCES.txt'
+[0.846s] running build
+[0.846s] running build_py
+[0.846s] running install
+[0.846s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.846s]   warnings.warn(
+[0.846s] running install_lib
+[0.847s] running install_data
+[0.848s] running install_egg_info
+[0.849s] removing '/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.849s] Copying ../../build/turtle_controller/turtle_controller.egg-info to /home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages/turtle_controller-0.0.0-py3.10.egg-info
+[0.850s] running install_scripts
+[0.869s] Installing turtle script to /home/filip/ros2_ws/install/turtle_controller/lib/turtle_controller
+[0.870s] writing list of installed files to '/home/filip/ros2_ws/build/turtle_controller/install.log'
+[0.898s] Invoked command in '/home/filip/ros2_ws/src/turtle_controller' returned '0': PYTHONPATH=/home/filip/ros2_ws/build/turtle_controller/prefix_override:/home/filip/ros2_ws/install/turtle_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_controller build --build-base /home/filip/ros2_ws/build/turtle_controller/build install --record /home/filip/ros2_ws/build/turtle_controller/install.log --single-version-externally-managed

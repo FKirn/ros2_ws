@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/turtle_positioning.py", line 29
+    self.call_service_teleport(str(x_tel.value, str(y_tel.value, str(theta_tel.value)
+                                                   ^
+SyntaxError: '(' was never closed
+

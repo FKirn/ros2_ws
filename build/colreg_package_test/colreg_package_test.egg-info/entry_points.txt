@@ -1,0 +1,6 @@
+[console_scripts]
+main_ship_control = colreg_package_test.main_ship_control:main
+obstacle_ship_control = colreg_package_test.obstacle_ship_control:main
+position = colreg_package_test.turtle_positioning:main
+tcpa_dcpa = colreg_package_test.tcpa_dcpa:main
+

@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from colreg_interfaces/msg/Colreg.msg
+// generated code does not contain a copyright notice
+
+
+module colreg_interfaces {
+  module msg {
+    struct Colreg {
+      float tcpa;
+
+      float dcpa;
+
+      float collision_point_x;
+
+      float collision_point_y;
+
+      float x_target;
+
+      float y_target;
+
+      float x_own;
+
+      float y_own;
+
+      float theta_target;
+
+      float theta_own;
+    };
+  };
+};

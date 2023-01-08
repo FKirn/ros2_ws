@@ -1,0 +1,23 @@
+[  3%] Built target colreg_interfaces__cpp
+[  6%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/colreg__functions.c.o[0m
+[  6%] Built target ament_cmake_python_copy_colreg_interfaces
+In file included from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/colreg__functions.h:19[m[K,
+                 from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/colreg__functions.c:4[m[K:
+[01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/colreg__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kturtlesim/msg/detail/pose__struct.h: No such file or directory
+   22 | #include [01;31m[K"turtlesim/msg/detail/pose__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/build.make:105: CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/colreg__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_typesupport_cpp[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/colreg_interfaces/msg/colreg__type_support.cpp.o[0m
+In file included from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_typesupport_cpp/colreg_interfaces/msg/colreg__type_support.cpp:7[m[K:
+[01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_cpp/colreg_interfaces/msg/detail/colreg__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kturtlesim/msg/detail/pose__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"turtlesim/msg/detail/pose__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/colreg_interfaces/msg/colreg__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/colreg_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

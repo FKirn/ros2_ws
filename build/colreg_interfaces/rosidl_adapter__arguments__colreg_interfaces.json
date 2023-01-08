@@ -1,0 +1,7 @@
+{
+  "package_name": "colreg_interfaces",
+  "non_idl_tuples": [
+    "/home/filip/ros2_ws/src/colreg_interfaces:msg/ShipData.msg",
+    "/home/filip/ros2_ws/src/colreg_interfaces:msg/AvoidanceScenario.msg"
+  ]
+}

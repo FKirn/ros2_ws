@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/avoidance_scenario__type_support.c.o"
+  "CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/avoidance_scenario__type_support.c.o.d"
+  "CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/ship_data__type_support.c.o"
+  "CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/ship_data__type_support.c.o.d"
+  "libcolreg_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libcolreg_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/avoidance_scenario__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/avoidance_scenario__type_support.c"
+  "rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/colreg_interfaces/msg/detail/ship_data__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/colreg_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
