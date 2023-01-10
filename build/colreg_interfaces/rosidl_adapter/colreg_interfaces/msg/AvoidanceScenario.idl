@@ -2,29 +2,21 @@
 // with input from colreg_interfaces/msg/AvoidanceScenario.msg
 // generated code does not contain a copyright notice
 
+#include "std_msgs/msg/Header.idl"
 
 module colreg_interfaces {
   module msg {
+    module AvoidanceScenario_Constants {
+      const uint8 NO_COLLISION = 1;
+      const uint8 HEAD_ON = 2;
+      const uint8 OVERTAKING = 3;
+      const uint8 CROSSING_PORT = 4;
+      const uint8 CROSSING_STARBOARD = 5;
+    };
     struct AvoidanceScenario {
-      float tcpa;
+      std_msgs::msg::Header header;
 
-      float dcpa;
-
-      float collision_point_x;
-
-      float collision_point_y;
-
-      float x_target;
-
-      float y_target;
-
-      float x_own;
-
-      float y_own;
-
-      float theta_target;
-
-      float theta_own;
+      uint8 scenario;
     };
   };
 };

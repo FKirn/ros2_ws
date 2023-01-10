@@ -16,6 +16,10 @@
 #include "colreg_interfaces/msg/detail/ship_data__struct.h"
 #include "colreg_interfaces/msg/detail/ship_data__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool colreg_interfaces__msg__ship_data__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,6 +54,17 @@ bool colreg_interfaces__msg__ship_data__convert_from_py(PyObject * _pymsg, void 
     assert(strncmp("colreg_interfaces.msg._ship_data.ShipData", full_classname_dest, 41) == 0);
   }
   colreg_interfaces__msg__ShipData * ros_message = _ros_message;
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
+    if (!field) {
+      return false;
+    }
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
   {  // tcpa
     PyObject * field = PyObject_GetAttrString(_pymsg, "tcpa");
     if (!field) {
@@ -162,6 +177,20 @@ PyObject * colreg_interfaces__msg__ship_data__convert_to_py(void * raw_ros_messa
     }
   }
   colreg_interfaces__msg__ShipData * ros_message = (colreg_interfaces__msg__ShipData *)raw_ros_message;
+  {  // header
+    PyObject * field = NULL;
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // tcpa
     PyObject * field = NULL;
     field = PyFloat_FromDouble(ros_message->tcpa);

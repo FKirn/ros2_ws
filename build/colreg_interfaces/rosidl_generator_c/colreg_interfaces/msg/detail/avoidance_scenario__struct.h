@@ -17,19 +17,45 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'NO_COLLISION'.
+enum
+{
+  colreg_interfaces__msg__AvoidanceScenario__NO_COLLISION = 1
+};
+
+/// Constant 'HEAD_ON'.
+enum
+{
+  colreg_interfaces__msg__AvoidanceScenario__HEAD_ON = 2
+};
+
+/// Constant 'OVERTAKING'.
+enum
+{
+  colreg_interfaces__msg__AvoidanceScenario__OVERTAKING = 3
+};
+
+/// Constant 'CROSSING_PORT'.
+enum
+{
+  colreg_interfaces__msg__AvoidanceScenario__CROSSING_PORT = 4
+};
+
+/// Constant 'CROSSING_STARBOARD'.
+enum
+{
+  colreg_interfaces__msg__AvoidanceScenario__CROSSING_STARBOARD = 5
+};
+
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.h"
+
 /// Struct defined in msg/AvoidanceScenario in the package colreg_interfaces.
 typedef struct colreg_interfaces__msg__AvoidanceScenario
 {
-  float tcpa;
-  float dcpa;
-  float collision_point_x;
-  float collision_point_y;
-  float x_target;
-  float y_target;
-  float x_own;
-  float y_own;
-  float theta_target;
-  float theta_own;
+  std_msgs__msg__Header header;
+  uint8_t scenario;
 } colreg_interfaces__msg__AvoidanceScenario;
 
 // Struct for a sequence of colreg_interfaces__msg__AvoidanceScenario.

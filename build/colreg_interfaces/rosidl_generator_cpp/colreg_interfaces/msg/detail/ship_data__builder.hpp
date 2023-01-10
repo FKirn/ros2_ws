@@ -168,13 +168,29 @@ private:
 class Init_ShipData_tcpa
 {
 public:
-  Init_ShipData_tcpa()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_ShipData_tcpa(::colreg_interfaces::msg::ShipData & msg)
+  : msg_(msg)
   {}
   Init_ShipData_dcpa tcpa(::colreg_interfaces::msg::ShipData::_tcpa_type arg)
   {
     msg_.tcpa = std::move(arg);
     return Init_ShipData_dcpa(msg_);
+  }
+
+private:
+  ::colreg_interfaces::msg::ShipData msg_;
+};
+
+class Init_ShipData_header
+{
+public:
+  Init_ShipData_header()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_ShipData_tcpa header(::colreg_interfaces::msg::ShipData::_header_type arg)
+  {
+    msg_.header = std::move(arg);
+    return Init_ShipData_tcpa(msg_);
   }
 
 private:
@@ -192,7 +208,7 @@ template<>
 inline
 auto build<::colreg_interfaces::msg::ShipData>()
 {
-  return colreg_interfaces::msg::builder::Init_ShipData_tcpa();
+  return colreg_interfaces::msg::builder::Init_ShipData_header();
 }
 
 }  // namespace colreg_interfaces

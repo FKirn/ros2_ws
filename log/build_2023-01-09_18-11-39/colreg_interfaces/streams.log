@@ -1,0 +1,41 @@
+[0.039s] Invoking command in '/home/filip/ros2_ws/build/colreg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble /usr/bin/cmake --build /home/filip/ros2_ws/build/colreg_interfaces -- -j2 -l2
+[0.073s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.315s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.322s] -- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.369s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.372s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.380s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.561s] -- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+[0.710s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.908s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.240s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.364s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.384s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.408s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.408s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.408s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.424s] -- Added test 'lint_cmake' to check CMake code style
+[1.425s] -- Added test 'xmllint' to check XML markup files
+[1.428s] -- Configuring done
+[1.475s] -- Generating done
+[1.483s] -- Build files have been written to: /home/filip/ros2_ws/build/colreg_interfaces
+[1.515s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.527s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.932s] [35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_generator_c[0m
+[1.955s] [  7%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__functions.c.o[0m
+[1.990s] [  7%] Built target colreg_interfaces__cpp
+[2.000s] [ 10%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c.o[0m
+[2.014s] In file included from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.h:19[m[K,
+[2.014s]                  from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c:4[m[K:
+[2.014s] [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__struct.h:52:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/detail/header__struct.h: No such file or directory
+[2.014s]    52 | #include [01;31m[K"std_msgs/msg/detail/header__struct.h"[m[K
+[2.015s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.015s] compilation terminated.
+[2.016s] gmake[2]: *** [CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/build.make:135: CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c.o] Error 1
+[2.016s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/all] Error 2
+[2.016s] gmake[1]: *** Waiting for unfinished jobs....
+[2.023s] [ 10%] Built target ament_cmake_python_copy_colreg_interfaces
+[2.025s] gmake: *** [Makefile:146: all] Error 2
+[2.026s] Invoked command in '/home/filip/ros2_ws/build/colreg_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/filip/ros2_ws/install/py_pubsub:/home/filip/ros2_ws/install/colreg_package_test:/home/filip/ros2_ws/install/colreg_package:/opt/ros/humble /usr/bin/cmake --build /home/filip/ros2_ws/build/colreg_interfaces -- -j2 -l2

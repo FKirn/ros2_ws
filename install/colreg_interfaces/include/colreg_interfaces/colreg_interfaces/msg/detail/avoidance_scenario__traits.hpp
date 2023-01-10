@@ -14,6 +14,10 @@
 #include "colreg_interfaces/msg/detail/avoidance_scenario__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__traits.hpp"
+
 namespace colreg_interfaces
 {
 
@@ -25,73 +29,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: tcpa
+  // member: header
   {
-    out << "tcpa: ";
-    rosidl_generator_traits::value_to_yaml(msg.tcpa, out);
+    out << "header: ";
+    to_flow_style_yaml(msg.header, out);
     out << ", ";
   }
 
-  // member: dcpa
+  // member: scenario
   {
-    out << "dcpa: ";
-    rosidl_generator_traits::value_to_yaml(msg.dcpa, out);
-    out << ", ";
-  }
-
-  // member: collision_point_x
-  {
-    out << "collision_point_x: ";
-    rosidl_generator_traits::value_to_yaml(msg.collision_point_x, out);
-    out << ", ";
-  }
-
-  // member: collision_point_y
-  {
-    out << "collision_point_y: ";
-    rosidl_generator_traits::value_to_yaml(msg.collision_point_y, out);
-    out << ", ";
-  }
-
-  // member: x_target
-  {
-    out << "x_target: ";
-    rosidl_generator_traits::value_to_yaml(msg.x_target, out);
-    out << ", ";
-  }
-
-  // member: y_target
-  {
-    out << "y_target: ";
-    rosidl_generator_traits::value_to_yaml(msg.y_target, out);
-    out << ", ";
-  }
-
-  // member: x_own
-  {
-    out << "x_own: ";
-    rosidl_generator_traits::value_to_yaml(msg.x_own, out);
-    out << ", ";
-  }
-
-  // member: y_own
-  {
-    out << "y_own: ";
-    rosidl_generator_traits::value_to_yaml(msg.y_own, out);
-    out << ", ";
-  }
-
-  // member: theta_target
-  {
-    out << "theta_target: ";
-    rosidl_generator_traits::value_to_yaml(msg.theta_target, out);
-    out << ", ";
-  }
-
-  // member: theta_own
-  {
-    out << "theta_own: ";
-    rosidl_generator_traits::value_to_yaml(msg.theta_own, out);
+    out << "scenario: ";
+    rosidl_generator_traits::value_to_yaml(msg.scenario, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -100,103 +48,22 @@ inline void to_block_style_yaml(
   const AvoidanceScenario & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: tcpa
+  // member: header
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "tcpa: ";
-    rosidl_generator_traits::value_to_yaml(msg.tcpa, out);
-    out << "\n";
+    out << "header:\n";
+    to_block_style_yaml(msg.header, out, indentation + 2);
   }
 
-  // member: dcpa
+  // member: scenario
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "dcpa: ";
-    rosidl_generator_traits::value_to_yaml(msg.dcpa, out);
-    out << "\n";
-  }
-
-  // member: collision_point_x
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "collision_point_x: ";
-    rosidl_generator_traits::value_to_yaml(msg.collision_point_x, out);
-    out << "\n";
-  }
-
-  // member: collision_point_y
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "collision_point_y: ";
-    rosidl_generator_traits::value_to_yaml(msg.collision_point_y, out);
-    out << "\n";
-  }
-
-  // member: x_target
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "x_target: ";
-    rosidl_generator_traits::value_to_yaml(msg.x_target, out);
-    out << "\n";
-  }
-
-  // member: y_target
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "y_target: ";
-    rosidl_generator_traits::value_to_yaml(msg.y_target, out);
-    out << "\n";
-  }
-
-  // member: x_own
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "x_own: ";
-    rosidl_generator_traits::value_to_yaml(msg.x_own, out);
-    out << "\n";
-  }
-
-  // member: y_own
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "y_own: ";
-    rosidl_generator_traits::value_to_yaml(msg.y_own, out);
-    out << "\n";
-  }
-
-  // member: theta_target
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "theta_target: ";
-    rosidl_generator_traits::value_to_yaml(msg.theta_target, out);
-    out << "\n";
-  }
-
-  // member: theta_own
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "theta_own: ";
-    rosidl_generator_traits::value_to_yaml(msg.theta_own, out);
+    out << "scenario: ";
+    rosidl_generator_traits::value_to_yaml(msg.scenario, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -247,11 +114,11 @@ inline const char * name<colreg_interfaces::msg::AvoidanceScenario>()
 
 template<>
 struct has_fixed_size<colreg_interfaces::msg::AvoidanceScenario>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct has_bounded_size<colreg_interfaces::msg::AvoidanceScenario>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct is_message<colreg_interfaces::msg::AvoidanceScenario>

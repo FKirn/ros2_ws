@@ -12,6 +12,12 @@
 #include "colreg_interfaces/msg/detail/avoidance_scenario__struct.h"
 
 
+// Include directives for member types
+// Member `header`
+#include "std_msgs/msg/header.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,16 +37,16 @@ void colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection
   colreg_interfaces__msg__AvoidanceScenario__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_member_array[10] = {
+static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_member_array[2] = {
   {
-    "tcpa",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "header",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, tcpa),  // bytes offset in struct
+    offsetof(colreg_interfaces__msg__AvoidanceScenario, header),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,150 +56,14 @@ static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "dcpa",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "scenario",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, dcpa),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "collision_point_x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, collision_point_x),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "collision_point_y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, collision_point_y),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "x_target",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, x_target),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "y_target",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, y_target),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "x_own",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, x_own),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "y_own",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, y_own),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "theta_target",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, theta_target),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "theta_own",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(colreg_interfaces__msg__AvoidanceScenario, theta_own),  // bytes offset in struct
+    offsetof(colreg_interfaces__msg__AvoidanceScenario, scenario),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -207,7 +77,7 @@ static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg_
 static const rosidl_typesupport_introspection_c__MessageMembers colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_members = {
   "colreg_interfaces__msg",  // message namespace
   "AvoidanceScenario",  // message name
-  10,  // number of fields
+  2,  // number of fields
   sizeof(colreg_interfaces__msg__AvoidanceScenario),
   colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_member_array,  // message members
   colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -225,6 +95,8 @@ static rosidl_message_type_support_t colreg_interfaces__msg__AvoidanceScenario__
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_colreg_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, colreg_interfaces, msg, AvoidanceScenario)() {
+  colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
   if (!colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_type_support_handle.typesupport_identifier) {
     colreg_interfaces__msg__AvoidanceScenario__rosidl_typesupport_introspection_c__AvoidanceScenario_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

@@ -16,6 +16,30 @@
 
 
 // forward declaration of message dependencies and their conversion functions
+namespace std_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const std_msgs::msg::Header &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  std_msgs::msg::Header &);
+size_t get_serialized_size(
+  const std_msgs::msg::Header &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Header(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace std_msgs
+
 
 namespace colreg_interfaces
 {
@@ -32,26 +56,12 @@ cdr_serialize(
   const colreg_interfaces::msg::AvoidanceScenario & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: tcpa
-  cdr << ros_message.tcpa;
-  // Member: dcpa
-  cdr << ros_message.dcpa;
-  // Member: collision_point_x
-  cdr << ros_message.collision_point_x;
-  // Member: collision_point_y
-  cdr << ros_message.collision_point_y;
-  // Member: x_target
-  cdr << ros_message.x_target;
-  // Member: y_target
-  cdr << ros_message.y_target;
-  // Member: x_own
-  cdr << ros_message.x_own;
-  // Member: y_own
-  cdr << ros_message.y_own;
-  // Member: theta_target
-  cdr << ros_message.theta_target;
-  // Member: theta_own
-  cdr << ros_message.theta_own;
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.header,
+    cdr);
+  // Member: scenario
+  cdr << ros_message.scenario;
   return true;
 }
 
@@ -61,35 +71,12 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   colreg_interfaces::msg::AvoidanceScenario & ros_message)
 {
-  // Member: tcpa
-  cdr >> ros_message.tcpa;
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.header);
 
-  // Member: dcpa
-  cdr >> ros_message.dcpa;
-
-  // Member: collision_point_x
-  cdr >> ros_message.collision_point_x;
-
-  // Member: collision_point_y
-  cdr >> ros_message.collision_point_y;
-
-  // Member: x_target
-  cdr >> ros_message.x_target;
-
-  // Member: y_target
-  cdr >> ros_message.y_target;
-
-  // Member: x_own
-  cdr >> ros_message.x_own;
-
-  // Member: y_own
-  cdr >> ros_message.y_own;
-
-  // Member: theta_target
-  cdr >> ros_message.theta_target;
-
-  // Member: theta_own
-  cdr >> ros_message.theta_own;
+  // Member: scenario
+  cdr >> ros_message.scenario;
 
   return true;
 }
@@ -107,63 +94,14 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: tcpa
+  // Member: header
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.header, current_alignment);
+  // Member: scenario
   {
-    size_t item_size = sizeof(ros_message.tcpa);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: dcpa
-  {
-    size_t item_size = sizeof(ros_message.dcpa);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: collision_point_x
-  {
-    size_t item_size = sizeof(ros_message.collision_point_x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: collision_point_y
-  {
-    size_t item_size = sizeof(ros_message.collision_point_y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: x_target
-  {
-    size_t item_size = sizeof(ros_message.x_target);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: y_target
-  {
-    size_t item_size = sizeof(ros_message.y_target);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: x_own
-  {
-    size_t item_size = sizeof(ros_message.x_own);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: y_own
-  {
-    size_t item_size = sizeof(ros_message.y_own);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: theta_target
-  {
-    size_t item_size = sizeof(ros_message.theta_target);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: theta_own
-  {
-    size_t item_size = sizeof(ros_message.theta_own);
+    size_t item_size = sizeof(ros_message.scenario);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -189,84 +127,27 @@ max_serialized_size_AvoidanceScenario(
   is_plain = true;
 
 
-  // Member: tcpa
+  // Member: header
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Header(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
-  // Member: dcpa
+  // Member: scenario
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: collision_point_x
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: collision_point_y
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: x_target
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: y_target
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: x_own
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: y_own
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: theta_target
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: theta_own
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;

@@ -37,7 +37,24 @@ void ShipData_fini_function(void * message_memory)
   typed_message->~ShipData();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ShipData_message_member_array[10] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ShipData_message_member_array[11] = {
+  {
+    "header",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Header>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(colreg_interfaces::msg::ShipData, header),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "tcpa",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -213,7 +230,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ShipData_mess
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ShipData_message_members = {
   "colreg_interfaces::msg",  // message namespace
   "ShipData",  // message name
-  10,  // number of fields
+  11,  // number of fields
   sizeof(colreg_interfaces::msg::ShipData),
   ShipData_message_member_array,  // message members
   ShipData_init_function,  // function to initialize message memory (memory has to be allocated)

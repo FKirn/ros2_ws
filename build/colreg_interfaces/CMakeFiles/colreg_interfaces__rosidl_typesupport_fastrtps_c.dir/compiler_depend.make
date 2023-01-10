@@ -223,9 +223,14 @@ CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/malloc.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.h \
   /usr/include/c++/11/stdlib.h \
-  rosidl_generator_c/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__type_support_c.cpp \
   /usr/include/stdc-predef.h \
@@ -449,9 +454,14 @@ CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/malloc.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__functions.h \
   /usr/include/c++/11/stdlib.h \
-  rosidl_generator_c/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h
 
 
 rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__type_support_c.cpp:
@@ -459,6 +469,12 @@ rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__type_suppo
 /usr/include/c++/11/stdlib.h:
 
 rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h:
 
 rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__struct.h:
 
@@ -890,6 +906,8 @@ rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/avoidance_scenario__t
 
 /usr/include/c++/11/cstdlib:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h:
+
 /usr/include/strings.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
@@ -905,6 +923,8 @@ rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/avoidance_scenario__t
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/c++/11/bits/alloc_traits.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
 

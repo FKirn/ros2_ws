@@ -249,6 +249,10 @@ CMakeFiles/colreg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/colreg
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.h \
   rosidl_generator_c/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h
 
@@ -500,11 +504,17 @@ CMakeFiles/colreg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/colreg
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__functions.h \
   rosidl_generator_c/colreg_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 
 rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__struct.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h:
 
@@ -521,6 +531,8 @@ rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__struct.h:
 /usr/include/python3.10/eval.h:
 
 /usr/include/python3.10/cpython/import.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h:
 
 /usr/include/python3.10/import.h:
 
@@ -557,6 +569,8 @@ rosidl_generator_c/colreg_interfaces/msg/detail/ship_data__struct.h:
 /usr/include/python3.10/genericaliasobject.h:
 
 rosidl_generator_py/colreg_interfaces/msg/_ship_data_s.c:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
 
 /usr/include/python3.10/descrobject.h:
 
@@ -647,6 +661,8 @@ rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.h:
 /usr/include/python3.10/fileobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 

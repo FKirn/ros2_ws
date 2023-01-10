@@ -17,7 +17,7 @@ def generate_launch_description():
         name = "turtle_initial_positioning",
         output="screen",
         parameters=[
-                os.path.join(get_package_share_directory("colreg_package"), 'parameters', 'overtaking.yaml')]
+                os.path.join(get_package_share_directory("colreg_package"), 'parameters', 'crossing_port.yaml')]
     )
     
     target_ship_control_node = Node(

@@ -20,6 +20,11 @@ class Metaclass_AvoidanceScenario(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'NO_COLLISION': 1,
+        'HEAD_ON': 2,
+        'OVERTAKING': 3,
+        'CROSSING_PORT': 4,
+        'CROSSING_STARBOARD': 5,
     }
 
     @classmethod
@@ -42,71 +47,83 @@ class Metaclass_AvoidanceScenario(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__avoidance_scenario
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__avoidance_scenario
 
+            from std_msgs.msg import Header
+            if Header.__class__._TYPE_SUPPORT is None:
+                Header.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'NO_COLLISION': cls.__constants['NO_COLLISION'],
+            'HEAD_ON': cls.__constants['HEAD_ON'],
+            'OVERTAKING': cls.__constants['OVERTAKING'],
+            'CROSSING_PORT': cls.__constants['CROSSING_PORT'],
+            'CROSSING_STARBOARD': cls.__constants['CROSSING_STARBOARD'],
         }
+
+    @property
+    def NO_COLLISION(self):
+        """Message constant 'NO_COLLISION'."""
+        return Metaclass_AvoidanceScenario.__constants['NO_COLLISION']
+
+    @property
+    def HEAD_ON(self):
+        """Message constant 'HEAD_ON'."""
+        return Metaclass_AvoidanceScenario.__constants['HEAD_ON']
+
+    @property
+    def OVERTAKING(self):
+        """Message constant 'OVERTAKING'."""
+        return Metaclass_AvoidanceScenario.__constants['OVERTAKING']
+
+    @property
+    def CROSSING_PORT(self):
+        """Message constant 'CROSSING_PORT'."""
+        return Metaclass_AvoidanceScenario.__constants['CROSSING_PORT']
+
+    @property
+    def CROSSING_STARBOARD(self):
+        """Message constant 'CROSSING_STARBOARD'."""
+        return Metaclass_AvoidanceScenario.__constants['CROSSING_STARBOARD']
 
 
 class AvoidanceScenario(metaclass=Metaclass_AvoidanceScenario):
-    """Message class 'AvoidanceScenario'."""
+    """
+    Message class 'AvoidanceScenario'.
+
+    Constants:
+      NO_COLLISION
+      HEAD_ON
+      OVERTAKING
+      CROSSING_PORT
+      CROSSING_STARBOARD
+    """
 
     __slots__ = [
-        '_tcpa',
-        '_dcpa',
-        '_collision_point_x',
-        '_collision_point_y',
-        '_x_target',
-        '_y_target',
-        '_x_own',
-        '_y_own',
-        '_theta_target',
-        '_theta_own',
+        '_header',
+        '_scenario',
     ]
 
     _fields_and_field_types = {
-        'tcpa': 'float',
-        'dcpa': 'float',
-        'collision_point_x': 'float',
-        'collision_point_y': 'float',
-        'x_target': 'float',
-        'y_target': 'float',
-        'x_own': 'float',
-        'y_own': 'float',
-        'theta_target': 'float',
-        'theta_own': 'float',
+        'header': 'std_msgs/Header',
+        'scenario': 'uint8',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.tcpa = kwargs.get('tcpa', float())
-        self.dcpa = kwargs.get('dcpa', float())
-        self.collision_point_x = kwargs.get('collision_point_x', float())
-        self.collision_point_y = kwargs.get('collision_point_y', float())
-        self.x_target = kwargs.get('x_target', float())
-        self.y_target = kwargs.get('y_target', float())
-        self.x_own = kwargs.get('x_own', float())
-        self.y_own = kwargs.get('y_own', float())
-        self.theta_target = kwargs.get('theta_target', float())
-        self.theta_own = kwargs.get('theta_own', float())
+        from std_msgs.msg import Header
+        self.header = kwargs.get('header', Header())
+        self.scenario = kwargs.get('scenario', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -137,25 +154,9 @@ class AvoidanceScenario(metaclass=Metaclass_AvoidanceScenario):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.tcpa != other.tcpa:
+        if self.header != other.header:
             return False
-        if self.dcpa != other.dcpa:
-            return False
-        if self.collision_point_x != other.collision_point_x:
-            return False
-        if self.collision_point_y != other.collision_point_y:
-            return False
-        if self.x_target != other.x_target:
-            return False
-        if self.y_target != other.y_target:
-            return False
-        if self.x_own != other.x_own:
-            return False
-        if self.y_own != other.y_own:
-            return False
-        if self.theta_target != other.theta_target:
-            return False
-        if self.theta_own != other.theta_own:
+        if self.scenario != other.scenario:
             return False
         return True
 
@@ -165,151 +166,30 @@ class AvoidanceScenario(metaclass=Metaclass_AvoidanceScenario):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def tcpa(self):
-        """Message field 'tcpa'."""
-        return self._tcpa
+    def header(self):
+        """Message field 'header'."""
+        return self._header
 
-    @tcpa.setter
-    def tcpa(self, value):
+    @header.setter
+    def header(self, value):
         if __debug__:
+            from std_msgs.msg import Header
             assert \
-                isinstance(value, float), \
-                "The 'tcpa' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'tcpa' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._tcpa = value
+                isinstance(value, Header), \
+                "The 'header' field must be a sub message of type 'Header'"
+        self._header = value
 
     @builtins.property
-    def dcpa(self):
-        """Message field 'dcpa'."""
-        return self._dcpa
+    def scenario(self):
+        """Message field 'scenario'."""
+        return self._scenario
 
-    @dcpa.setter
-    def dcpa(self, value):
+    @scenario.setter
+    def scenario(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'dcpa' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'dcpa' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._dcpa = value
-
-    @builtins.property
-    def collision_point_x(self):
-        """Message field 'collision_point_x'."""
-        return self._collision_point_x
-
-    @collision_point_x.setter
-    def collision_point_x(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'collision_point_x' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'collision_point_x' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._collision_point_x = value
-
-    @builtins.property
-    def collision_point_y(self):
-        """Message field 'collision_point_y'."""
-        return self._collision_point_y
-
-    @collision_point_y.setter
-    def collision_point_y(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'collision_point_y' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'collision_point_y' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._collision_point_y = value
-
-    @builtins.property
-    def x_target(self):
-        """Message field 'x_target'."""
-        return self._x_target
-
-    @x_target.setter
-    def x_target(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'x_target' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'x_target' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._x_target = value
-
-    @builtins.property
-    def y_target(self):
-        """Message field 'y_target'."""
-        return self._y_target
-
-    @y_target.setter
-    def y_target(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'y_target' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'y_target' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._y_target = value
-
-    @builtins.property
-    def x_own(self):
-        """Message field 'x_own'."""
-        return self._x_own
-
-    @x_own.setter
-    def x_own(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'x_own' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'x_own' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._x_own = value
-
-    @builtins.property
-    def y_own(self):
-        """Message field 'y_own'."""
-        return self._y_own
-
-    @y_own.setter
-    def y_own(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'y_own' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'y_own' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._y_own = value
-
-    @builtins.property
-    def theta_target(self):
-        """Message field 'theta_target'."""
-        return self._theta_target
-
-    @theta_target.setter
-    def theta_target(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'theta_target' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'theta_target' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._theta_target = value
-
-    @builtins.property
-    def theta_own(self):
-        """Message field 'theta_own'."""
-        return self._theta_own
-
-    @theta_own.setter
-    def theta_own(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'theta_own' field must be of type 'float'"
-            assert value >= -3.402823e+38 and value <= 3.402823e+38, \
-                "The 'theta_own' field must be a float in [-3.402823e+38, 3.402823e+38]"
-        self._theta_own = value
+                isinstance(value, int), \
+                "The 'scenario' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'scenario' field must be an unsigned integer in [0, 255]"
+        self._scenario = value

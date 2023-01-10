@@ -17,9 +17,14 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.h"
+
 /// Struct defined in msg/ShipData in the package colreg_interfaces.
 typedef struct colreg_interfaces__msg__ShipData
 {
+  std_msgs__msg__Header header;
   float tcpa;
   float dcpa;
   float collision_point_x;

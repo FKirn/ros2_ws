@@ -11,22 +11,22 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `header`
+#include "std_msgs/msg/detail/header__functions.h"
+
 bool
 colreg_interfaces__msg__AvoidanceScenario__init(colreg_interfaces__msg__AvoidanceScenario * msg)
 {
   if (!msg) {
     return false;
   }
-  // tcpa
-  // dcpa
-  // collision_point_x
-  // collision_point_y
-  // x_target
-  // y_target
-  // x_own
-  // y_own
-  // theta_target
-  // theta_own
+  // header
+  if (!std_msgs__msg__Header__init(&msg->header)) {
+    colreg_interfaces__msg__AvoidanceScenario__fini(msg);
+    return false;
+  }
+  // scenario
   return true;
 }
 
@@ -36,16 +36,9 @@ colreg_interfaces__msg__AvoidanceScenario__fini(colreg_interfaces__msg__Avoidanc
   if (!msg) {
     return;
   }
-  // tcpa
-  // dcpa
-  // collision_point_x
-  // collision_point_y
-  // x_target
-  // y_target
-  // x_own
-  // y_own
-  // theta_target
-  // theta_own
+  // header
+  std_msgs__msg__Header__fini(&msg->header);
+  // scenario
 }
 
 bool
@@ -54,44 +47,14 @@ colreg_interfaces__msg__AvoidanceScenario__are_equal(const colreg_interfaces__ms
   if (!lhs || !rhs) {
     return false;
   }
-  // tcpa
-  if (lhs->tcpa != rhs->tcpa) {
+  // header
+  if (!std_msgs__msg__Header__are_equal(
+      &(lhs->header), &(rhs->header)))
+  {
     return false;
   }
-  // dcpa
-  if (lhs->dcpa != rhs->dcpa) {
-    return false;
-  }
-  // collision_point_x
-  if (lhs->collision_point_x != rhs->collision_point_x) {
-    return false;
-  }
-  // collision_point_y
-  if (lhs->collision_point_y != rhs->collision_point_y) {
-    return false;
-  }
-  // x_target
-  if (lhs->x_target != rhs->x_target) {
-    return false;
-  }
-  // y_target
-  if (lhs->y_target != rhs->y_target) {
-    return false;
-  }
-  // x_own
-  if (lhs->x_own != rhs->x_own) {
-    return false;
-  }
-  // y_own
-  if (lhs->y_own != rhs->y_own) {
-    return false;
-  }
-  // theta_target
-  if (lhs->theta_target != rhs->theta_target) {
-    return false;
-  }
-  // theta_own
-  if (lhs->theta_own != rhs->theta_own) {
+  // scenario
+  if (lhs->scenario != rhs->scenario) {
     return false;
   }
   return true;
@@ -105,26 +68,14 @@ colreg_interfaces__msg__AvoidanceScenario__copy(
   if (!input || !output) {
     return false;
   }
-  // tcpa
-  output->tcpa = input->tcpa;
-  // dcpa
-  output->dcpa = input->dcpa;
-  // collision_point_x
-  output->collision_point_x = input->collision_point_x;
-  // collision_point_y
-  output->collision_point_y = input->collision_point_y;
-  // x_target
-  output->x_target = input->x_target;
-  // y_target
-  output->y_target = input->y_target;
-  // x_own
-  output->x_own = input->x_own;
-  // y_own
-  output->y_own = input->y_own;
-  // theta_target
-  output->theta_target = input->theta_target;
-  // theta_own
-  output->theta_own = input->theta_own;
+  // header
+  if (!std_msgs__msg__Header__copy(
+      &(input->header), &(output->header)))
+  {
+    return false;
+  }
+  // scenario
+  output->scenario = input->scenario;
   return true;
 }
 

@@ -23,12 +23,13 @@ if(BUILD_TESTING)
 endif()
 
 find_package(ament_cmake REQUIRED)
-find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ShipData.msg"
   "msg/AvoidanceScenario.msg"
+  DEPENDENCIES std_msgs
  )
 ament_export_dependencies(rosidl_default_runtime)
 

@@ -1,0 +1,14 @@
+[  2%] Built target colreg_interfaces__cpp
+[35m[1mConsolidate compiler generated dependencies of target colreg_interfaces__rosidl_generator_c[0m
+[  5%] [32mBuilding C object CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c.o[0m
+In file included from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.h:19[m[K,
+                 from [01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c:4[m[K:
+[01m[K/home/filip/ros2_ws/build/colreg_interfaces/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__struct.h:52:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/detail/header__struct.h: No such file or directory
+   52 | #include [01;31m[K"std_msgs/msg/detail/header__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/build.make:135: CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/colreg_interfaces/msg/detail/avoidance_scenario__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/colreg_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[  5%] Built target ament_cmake_python_copy_colreg_interfaces
+gmake: *** [Makefile:146: all] Error 2

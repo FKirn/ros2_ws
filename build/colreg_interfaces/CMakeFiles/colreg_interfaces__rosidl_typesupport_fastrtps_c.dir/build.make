@@ -79,6 +79,38 @@ rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typ
 rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/colreg_interfaces/msg/ShipData.idl
 rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/colreg_interfaces/msg/AvoidanceScenario.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Char.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/ColorRGBA.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Empty.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Float32.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Float32MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Float64.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Float64MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Header.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int16.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int16MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int32.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int32MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int64.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int64MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int8.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Int8MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/MultiArrayDimension.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/MultiArrayLayout.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/String.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt16.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt16MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt32.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt32MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt64.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/filip/ros2_ws/build/colreg_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/filip/ros2_ws/build/colreg_interfaces/rosidl_typesupport_fastrtps_c__arguments.json
 
@@ -130,11 +162,15 @@ colreg_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/ship_data__type_support_c.cpp.o
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/colreg_interfaces/msg/detail/avoidance_scenario__type_support_c.cpp.o
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
-libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: libcolreg_interfaces__rosidl_generator_c.so
+libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
+libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libcolreg_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/colreg_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt

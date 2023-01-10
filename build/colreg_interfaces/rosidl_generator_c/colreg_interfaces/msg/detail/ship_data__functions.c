@@ -11,10 +11,19 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `header`
+#include "std_msgs/msg/detail/header__functions.h"
+
 bool
 colreg_interfaces__msg__ShipData__init(colreg_interfaces__msg__ShipData * msg)
 {
   if (!msg) {
+    return false;
+  }
+  // header
+  if (!std_msgs__msg__Header__init(&msg->header)) {
+    colreg_interfaces__msg__ShipData__fini(msg);
     return false;
   }
   // tcpa
@@ -36,6 +45,8 @@ colreg_interfaces__msg__ShipData__fini(colreg_interfaces__msg__ShipData * msg)
   if (!msg) {
     return;
   }
+  // header
+  std_msgs__msg__Header__fini(&msg->header);
   // tcpa
   // dcpa
   // collision_point_x
@@ -52,6 +63,12 @@ bool
 colreg_interfaces__msg__ShipData__are_equal(const colreg_interfaces__msg__ShipData * lhs, const colreg_interfaces__msg__ShipData * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // header
+  if (!std_msgs__msg__Header__are_equal(
+      &(lhs->header), &(rhs->header)))
+  {
     return false;
   }
   // tcpa
@@ -103,6 +120,12 @@ colreg_interfaces__msg__ShipData__copy(
   colreg_interfaces__msg__ShipData * output)
 {
   if (!input || !output) {
+    return false;
+  }
+  // header
+  if (!std_msgs__msg__Header__copy(
+      &(input->header), &(output->header)))
+  {
     return false;
   }
   // tcpa

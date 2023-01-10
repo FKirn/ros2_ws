@@ -12,6 +12,12 @@
 #include "colreg_interfaces/msg/detail/ship_data__struct.h"
 
 
+// Include directives for member types
+// Member `header`
+#include "std_msgs/msg/header.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +37,24 @@ void colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipD
   colreg_interfaces__msg__ShipData__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_member_array[10] = {
+static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_member_array[11] = {
+  {
+    "header",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(colreg_interfaces__msg__ShipData, header),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "tcpa",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -207,7 +230,7 @@ static rosidl_typesupport_introspection_c__MessageMember colreg_interfaces__msg_
 static const rosidl_typesupport_introspection_c__MessageMembers colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_members = {
   "colreg_interfaces__msg",  // message namespace
   "ShipData",  // message name
-  10,  // number of fields
+  11,  // number of fields
   sizeof(colreg_interfaces__msg__ShipData),
   colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_member_array,  // message members
   colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -225,6 +248,8 @@ static rosidl_message_type_support_t colreg_interfaces__msg__ShipData__rosidl_ty
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_colreg_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, colreg_interfaces, msg, ShipData)() {
+  colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
   if (!colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_type_support_handle.typesupport_identifier) {
     colreg_interfaces__msg__ShipData__rosidl_typesupport_introspection_c__ShipData_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

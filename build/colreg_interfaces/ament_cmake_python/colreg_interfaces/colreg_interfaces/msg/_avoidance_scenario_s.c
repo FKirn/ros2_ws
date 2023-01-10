@@ -16,6 +16,10 @@
 #include "colreg_interfaces/msg/detail/avoidance_scenario__struct.h"
 #include "colreg_interfaces/msg/detail/avoidance_scenario__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool colreg_interfaces__msg__avoidance_scenario__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,94 +54,24 @@ bool colreg_interfaces__msg__avoidance_scenario__convert_from_py(PyObject * _pym
     assert(strncmp("colreg_interfaces.msg._avoidance_scenario.AvoidanceScenario", full_classname_dest, 59) == 0);
   }
   colreg_interfaces__msg__AvoidanceScenario * ros_message = _ros_message;
-  {  // tcpa
-    PyObject * field = PyObject_GetAttrString(_pymsg, "tcpa");
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->tcpa = (float)PyFloat_AS_DOUBLE(field);
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
-  {  // dcpa
-    PyObject * field = PyObject_GetAttrString(_pymsg, "dcpa");
+  {  // scenario
+    PyObject * field = PyObject_GetAttrString(_pymsg, "scenario");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->dcpa = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // collision_point_x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "collision_point_x");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->collision_point_x = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // collision_point_y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "collision_point_y");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->collision_point_y = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // x_target
-    PyObject * field = PyObject_GetAttrString(_pymsg, "x_target");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->x_target = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // y_target
-    PyObject * field = PyObject_GetAttrString(_pymsg, "y_target");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->y_target = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // x_own
-    PyObject * field = PyObject_GetAttrString(_pymsg, "x_own");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->x_own = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // y_own
-    PyObject * field = PyObject_GetAttrString(_pymsg, "y_own");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->y_own = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // theta_target
-    PyObject * field = PyObject_GetAttrString(_pymsg, "theta_target");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->theta_target = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // theta_own
-    PyObject * field = PyObject_GetAttrString(_pymsg, "theta_own");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->theta_own = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->scenario = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -162,110 +96,25 @@ PyObject * colreg_interfaces__msg__avoidance_scenario__convert_to_py(void * raw_
     }
   }
   colreg_interfaces__msg__AvoidanceScenario * ros_message = (colreg_interfaces__msg__AvoidanceScenario *)raw_ros_message;
-  {  // tcpa
+  {  // header
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->tcpa);
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "tcpa", field);
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // dcpa
+  {  // scenario
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->dcpa);
+    field = PyLong_FromUnsignedLong(ros_message->scenario);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "dcpa", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // collision_point_x
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->collision_point_x);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "collision_point_x", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // collision_point_y
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->collision_point_y);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "collision_point_y", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // x_target
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x_target);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "x_target", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // y_target
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y_target);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "y_target", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // x_own
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x_own);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "x_own", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // y_own
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y_own);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "y_own", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // theta_target
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->theta_target);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "theta_target", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // theta_own
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->theta_own);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "theta_own", field);
+      int rc = PyObject_SetAttrString(_pymessage, "scenario", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

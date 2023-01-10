@@ -14,6 +14,10 @@
 #include "colreg_interfaces/msg/detail/ship_data__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__traits.hpp"
+
 namespace colreg_interfaces
 {
 
@@ -25,6 +29,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: header
+  {
+    out << "header: ";
+    to_flow_style_yaml(msg.header, out);
+    out << ", ";
+  }
+
   // member: tcpa
   {
     out << "tcpa: ";
@@ -100,6 +111,15 @@ inline void to_block_style_yaml(
   const ShipData & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: header
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "header:\n";
+    to_block_style_yaml(msg.header, out, indentation + 2);
+  }
+
   // member: tcpa
   {
     if (indentation > 0) {
@@ -247,11 +267,11 @@ inline const char * name<colreg_interfaces::msg::ShipData>()
 
 template<>
 struct has_fixed_size<colreg_interfaces::msg::ShipData>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct has_bounded_size<colreg_interfaces::msg::ShipData>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct is_message<colreg_interfaces::msg::ShipData>

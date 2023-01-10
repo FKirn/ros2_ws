@@ -1,11 +1,8 @@
 import rclpy
 from rclpy.node import Node
 from turtlesim.msg import Pose
-from std_msgs.msg import String
-from geometry_msgs.msg import Twist
 import math
 from colreg_interfaces.msg import ShipData
-import logging
 
 
 class TcpaDcpa(Node):
@@ -33,6 +30,8 @@ class TcpaDcpa(Node):
 
     def calculate_publish(self):
         self.calculate_tcpa_dcpa()
+        if self.tcpa > 0.0 and self.dcpa < 1.0:
+            self.calculate_collision_point(self.own_vel_x, self.own_vel_y, self.own_pose.x, self.own_pose.y, self.tcpa)
         self.publish_ship_data(self.tcpa, self.dcpa, self.collision_point_x, self.collision_point_y, self.trg_pose.x,
                                self.trg_pose.y,
                                self.own_pose.x, self.own_pose.y, self.trg_pose.theta, self.own_pose.theta)
@@ -73,8 +72,8 @@ class TcpaDcpa(Node):
             self.dcpa = math.sqrt(math.pow(((y_t - y_o) + (y_t_vel - y_o_vel) * self.tcpa), 2) + math.pow(
                 ((x_t - x_o) + (x_t_vel - x_o_vel) * self.tcpa), 2))
 
-        self.get_logger().info("TCPA: %s" % str(self.tcpa))
-        self.get_logger().info("DCPA: %s" % str(self.dcpa))
+        # self.get_logger().info("TCPA: %s" % str(self.tcpa))
+        # self.get_logger().info("DCPA: %s" % str(self.dcpa))
 
     def publish_ship_data(self, tcpa, dcpa, collision_point_x, collision_point_y, x_t, y_t, x_o, y_o, theta_trg,
                           theta_own):
@@ -89,14 +88,15 @@ class TcpaDcpa(Node):
         msg.y_own = y_o
         msg.theta_target = theta_trg
         msg.theta_own = theta_own
+        msg.header.stamp = self.get_clock().now().to_msg()
         self.ship_data_publisher_.publish(msg)
 
     def calculate_collision_point(self, v_0_x, v_0_y, x_o, y_o, tcpa):
         self.collision_point_x = tcpa * v_0_x + x_o
         self.collision_point_y = tcpa * v_0_y + y_o
 
-        self.get_logger().info("Predicted point of collsion x: %s" % str(self.collision_point_x))
-        self.get_logger().info("Predicted  point of collsion y: %s" % str(self.collision_point_y))
+        # self.get_logger().info("Predicted point of collsion x: %s" % str(self.collision_point_x))
+        # self.get_logger().info("Predicted  point of collsion y: %s" % str(self.collision_point_y))
 
     def calculate_velocity_x(self, velocity, theta):
         return velocity * math.cos(theta)

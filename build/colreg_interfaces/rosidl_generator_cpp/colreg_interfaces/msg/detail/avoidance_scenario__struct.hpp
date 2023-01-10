@@ -15,6 +15,10 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__colreg_interfaces__msg__AvoidanceScenario __attribute__((deprecated))
 #else
@@ -34,137 +38,58 @@ struct AvoidanceScenario_
   using Type = AvoidanceScenario_<ContainerAllocator>;
 
   explicit AvoidanceScenario_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->tcpa = 0.0f;
-      this->dcpa = 0.0f;
-      this->collision_point_x = 0.0f;
-      this->collision_point_y = 0.0f;
-      this->x_target = 0.0f;
-      this->y_target = 0.0f;
-      this->x_own = 0.0f;
-      this->y_own = 0.0f;
-      this->theta_target = 0.0f;
-      this->theta_own = 0.0f;
+      this->scenario = 0;
     }
   }
 
   explicit AvoidanceScenario_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->tcpa = 0.0f;
-      this->dcpa = 0.0f;
-      this->collision_point_x = 0.0f;
-      this->collision_point_y = 0.0f;
-      this->x_target = 0.0f;
-      this->y_target = 0.0f;
-      this->x_own = 0.0f;
-      this->y_own = 0.0f;
-      this->theta_target = 0.0f;
-      this->theta_own = 0.0f;
+      this->scenario = 0;
     }
   }
 
   // field types and members
-  using _tcpa_type =
-    float;
-  _tcpa_type tcpa;
-  using _dcpa_type =
-    float;
-  _dcpa_type dcpa;
-  using _collision_point_x_type =
-    float;
-  _collision_point_x_type collision_point_x;
-  using _collision_point_y_type =
-    float;
-  _collision_point_y_type collision_point_y;
-  using _x_target_type =
-    float;
-  _x_target_type x_target;
-  using _y_target_type =
-    float;
-  _y_target_type y_target;
-  using _x_own_type =
-    float;
-  _x_own_type x_own;
-  using _y_own_type =
-    float;
-  _y_own_type y_own;
-  using _theta_target_type =
-    float;
-  _theta_target_type theta_target;
-  using _theta_own_type =
-    float;
-  _theta_own_type theta_own;
+  using _header_type =
+    std_msgs::msg::Header_<ContainerAllocator>;
+  _header_type header;
+  using _scenario_type =
+    uint8_t;
+  _scenario_type scenario;
 
   // setters for named parameter idiom
-  Type & set__tcpa(
-    const float & _arg)
+  Type & set__header(
+    const std_msgs::msg::Header_<ContainerAllocator> & _arg)
   {
-    this->tcpa = _arg;
+    this->header = _arg;
     return *this;
   }
-  Type & set__dcpa(
-    const float & _arg)
+  Type & set__scenario(
+    const uint8_t & _arg)
   {
-    this->dcpa = _arg;
-    return *this;
-  }
-  Type & set__collision_point_x(
-    const float & _arg)
-  {
-    this->collision_point_x = _arg;
-    return *this;
-  }
-  Type & set__collision_point_y(
-    const float & _arg)
-  {
-    this->collision_point_y = _arg;
-    return *this;
-  }
-  Type & set__x_target(
-    const float & _arg)
-  {
-    this->x_target = _arg;
-    return *this;
-  }
-  Type & set__y_target(
-    const float & _arg)
-  {
-    this->y_target = _arg;
-    return *this;
-  }
-  Type & set__x_own(
-    const float & _arg)
-  {
-    this->x_own = _arg;
-    return *this;
-  }
-  Type & set__y_own(
-    const float & _arg)
-  {
-    this->y_own = _arg;
-    return *this;
-  }
-  Type & set__theta_target(
-    const float & _arg)
-  {
-    this->theta_target = _arg;
-    return *this;
-  }
-  Type & set__theta_own(
-    const float & _arg)
-  {
-    this->theta_own = _arg;
+    this->scenario = _arg;
     return *this;
   }
 
   // constant declarations
+  static constexpr uint8_t NO_COLLISION =
+    1u;
+  static constexpr uint8_t HEAD_ON =
+    2u;
+  static constexpr uint8_t OVERTAKING =
+    3u;
+  static constexpr uint8_t CROSSING_PORT =
+    4u;
+  static constexpr uint8_t CROSSING_STARBOARD =
+    5u;
 
   // pointer types
   using RawPtr =
@@ -206,34 +131,10 @@ struct AvoidanceScenario_
   // comparison operators
   bool operator==(const AvoidanceScenario_ & other) const
   {
-    if (this->tcpa != other.tcpa) {
+    if (this->header != other.header) {
       return false;
     }
-    if (this->dcpa != other.dcpa) {
-      return false;
-    }
-    if (this->collision_point_x != other.collision_point_x) {
-      return false;
-    }
-    if (this->collision_point_y != other.collision_point_y) {
-      return false;
-    }
-    if (this->x_target != other.x_target) {
-      return false;
-    }
-    if (this->y_target != other.y_target) {
-      return false;
-    }
-    if (this->x_own != other.x_own) {
-      return false;
-    }
-    if (this->y_own != other.y_own) {
-      return false;
-    }
-    if (this->theta_target != other.theta_target) {
-      return false;
-    }
-    if (this->theta_own != other.theta_own) {
+    if (this->scenario != other.scenario) {
       return false;
     }
     return true;
@@ -249,6 +150,16 @@ using AvoidanceScenario =
   colreg_interfaces::msg::AvoidanceScenario_<std::allocator<void>>;
 
 // constant definitions
+template<typename ContainerAllocator>
+constexpr uint8_t AvoidanceScenario_<ContainerAllocator>::NO_COLLISION;
+template<typename ContainerAllocator>
+constexpr uint8_t AvoidanceScenario_<ContainerAllocator>::HEAD_ON;
+template<typename ContainerAllocator>
+constexpr uint8_t AvoidanceScenario_<ContainerAllocator>::OVERTAKING;
+template<typename ContainerAllocator>
+constexpr uint8_t AvoidanceScenario_<ContainerAllocator>::CROSSING_PORT;
+template<typename ContainerAllocator>
+constexpr uint8_t AvoidanceScenario_<ContainerAllocator>::CROSSING_STARBOARD;
 
 }  // namespace msg
 
