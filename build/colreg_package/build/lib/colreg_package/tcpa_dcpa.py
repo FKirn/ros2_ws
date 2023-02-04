@@ -3,7 +3,7 @@ from rclpy.node import Node
 from turtlesim.msg import Pose
 import math
 from colreg_interfaces.msg import ShipData
-
+import logging
 
 class TcpaDcpa(Node):
 
@@ -23,20 +23,30 @@ class TcpaDcpa(Node):
         self.collision_point_x = 0.0
         self.collision_point_y = 0.0
         self.run_once = True
-        self.trg_ship_pose_subscriber_ = self.create_subscription(Pose, "/turtle1/pose", self.trg_pose_callback, 10)
-        self.own_ship_pose_subscriber_ = self.create_subscription(Pose, "/turtle2/pose", self.own_pose_callback, 10)
-        self.ship_data_publisher_ = self.create_publisher(ShipData, "ship_data", 10)
-        self.timer = self.create_timer(0.25, self.calculate_publish)
 
-    def calculate_publish(self):
+        self.trg_ship_pose_subscriber_ = self.create_subscription(Pose, "/target_ship/pose", self.trg_pose_callback, 10)
+        self.subscribers = []
+        self.subscribers_data = []
+        self.publishers_ = []
+        for i in range(18):
+            sub_topic = "/turtle" + str(i+2) +"/pose"
+            pub_topic = "ship_data/ship_" + str(i+1)
+            self.publishers_.append(self.create_publisher(ShipData, pub_topic, 10))
+            self.subscribers.append(self.create_subscription(Pose, sub_topic, lambda msg: self.own_pose_callback(msg, i), 10))
+
+
+        # self.timer = self.create_timer(0.25, self.calculate_publish)
+
+    def calculate_publish(self, sub_num):
         self.calculate_tcpa_dcpa()
         if self.tcpa > 0.0 and self.dcpa < 1.0:
             self.calculate_collision_point(self.own_vel_x, self.own_vel_y, self.own_pose.x, self.own_pose.y, self.tcpa)
+
         self.publish_ship_data(self.tcpa, self.dcpa, self.collision_point_x, self.collision_point_y, self.trg_pose.x,
                                self.trg_pose.y,
-                               self.own_pose.x, self.own_pose.y, self.trg_pose.theta, self.own_pose.theta)
+                               self.own_pose.x, self.own_pose.y, self.trg_pose.theta, self.own_pose.theta, sub_num)
 
-    # spojiti oba callbacka u jedan
+
     def trg_pose_callback(self, data):
         self.trg_pose.x = data.x
         self.trg_pose.y = data.y
@@ -45,13 +55,18 @@ class TcpaDcpa(Node):
         self.trg_vel_x = self.calculate_velocity_x(self.trg_lin_vel, self.trg_pose.theta)
         self.trg_vel_y = self.calculate_velocity_y(self.trg_lin_vel, self.trg_pose.theta)
 
-    def own_pose_callback(self, data):
+
+    def own_pose_callback(self, data, arg):
+
         self.own_pose.x = data.x
         self.own_pose.y = data.y
         self.own_pose.theta = data.theta
         self.own_lin_vel = data.linear_velocity
         self.own_vel_x = self.calculate_velocity_x(self.own_lin_vel, self.own_pose.theta)
         self.own_vel_y = self.calculate_velocity_y(self.own_lin_vel, self.own_pose.theta)
+
+        # self.subscribers_data[arg] = data
+        # self.calculate_publish(arg)
 
     def calculate_tcpa_dcpa(self):
         x_t = self.trg_pose.x
@@ -72,11 +87,8 @@ class TcpaDcpa(Node):
             self.dcpa = math.sqrt(math.pow(((y_t - y_o) + (y_t_vel - y_o_vel) * self.tcpa), 2) + math.pow(
                 ((x_t - x_o) + (x_t_vel - x_o_vel) * self.tcpa), 2))
 
-        # self.get_logger().info("TCPA: %s" % str(self.tcpa))
-        # self.get_logger().info("DCPA: %s" % str(self.dcpa))
-
     def publish_ship_data(self, tcpa, dcpa, collision_point_x, collision_point_y, x_t, y_t, x_o, y_o, theta_trg,
-                          theta_own):
+                          theta_own, sub_num):
         msg = ShipData()
         msg.tcpa = tcpa
         msg.dcpa = dcpa
@@ -89,14 +101,14 @@ class TcpaDcpa(Node):
         msg.theta_target = theta_trg
         msg.theta_own = theta_own
         msg.header.stamp = self.get_clock().now().to_msg()
-        self.ship_data_publisher_.publish(msg)
+
+        self.publishers_[sub_num].publish(msg)
+        # self.ship_data_publisher_.publish(msg)
 
     def calculate_collision_point(self, v_0_x, v_0_y, x_o, y_o, tcpa):
         self.collision_point_x = tcpa * v_0_x + x_o
         self.collision_point_y = tcpa * v_0_y + y_o
 
-        # self.get_logger().info("Predicted point of collsion x: %s" % str(self.collision_point_x))
-        # self.get_logger().info("Predicted  point of collsion y: %s" % str(self.collision_point_y))
 
     def calculate_velocity_x(self, velocity, theta):
         return velocity * math.cos(theta)

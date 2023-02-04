@@ -1,0 +1,37 @@
+[0.907s] Invoking command in '/home/filip/ros2_ws/src/colreg_package': PYTHONPATH=/home/filip/ros2_ws/build/colreg_package/prefix_override:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colreg_package build --build-base /home/filip/ros2_ws/build/colreg_package/build install --record /home/filip/ros2_ws/build/colreg_package/install.log --single-version-externally-managed
+[1.228s] running egg_info
+[1.230s] writing ../../build/colreg_package/colreg_package.egg-info/PKG-INFO
+[1.230s] writing dependency_links to ../../build/colreg_package/colreg_package.egg-info/dependency_links.txt
+[1.231s] writing entry points to ../../build/colreg_package/colreg_package.egg-info/entry_points.txt
+[1.231s] writing requirements to ../../build/colreg_package/colreg_package.egg-info/requires.txt
+[1.231s] writing top-level names to ../../build/colreg_package/colreg_package.egg-info/top_level.txt
+[1.234s] reading manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+[1.234s] writing manifest file '../../build/colreg_package/colreg_package.egg-info/SOURCES.txt'
+[1.237s] running build
+[1.237s] running build_py
+[1.237s] copying colreg_package/target_ship_control.py -> /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package
+[1.237s] copying colreg_package/main_ship_control.py -> /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package
+[1.237s] copying colreg_package/turtle_positioning.py -> /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package
+[1.238s] running install
+[1.238s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.238s]   warnings.warn(
+[1.239s] running install_lib
+[1.239s] copying /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package/target_ship_control.py -> /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package
+[1.239s] copying /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package/main_ship_control.py -> /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package
+[1.239s] copying /home/filip/ros2_ws/build/colreg_package/build/lib/colreg_package/turtle_positioning.py -> /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package
+[1.239s] byte-compiling /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/target_ship_control.py to target_ship_control.cpython-310.pyc
+[1.240s] byte-compiling /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/main_ship_control.py to main_ship_control.cpython-310.pyc
+[1.241s] byte-compiling /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package/turtle_positioning.py to turtle_positioning.cpython-310.pyc
+[1.242s] running install_data
+[1.243s] copying launch/demo.launch.py -> /home/filip/ros2_ws/install/colreg_package/share/colreg_package/launch
+[1.256s] running install_egg_info
+[1.256s] removing '/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.256s] Copying ../../build/colreg_package/colreg_package.egg-info to /home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages/colreg_package-0.0.0-py3.10.egg-info
+[1.256s] running install_scripts
+[1.271s] Installing avoidance_scenario script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[1.271s] Installing main_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[1.271s] Installing position script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[1.272s] Installing target_ship_control script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[1.272s] Installing tcpa_dcpa script to /home/filip/ros2_ws/install/colreg_package/lib/colreg_package
+[1.273s] writing list of installed files to '/home/filip/ros2_ws/build/colreg_package/install.log'
+[1.297s] Invoked command in '/home/filip/ros2_ws/src/colreg_package' returned '0': PYTHONPATH=/home/filip/ros2_ws/build/colreg_package/prefix_override:/home/filip/ros2_ws/install/colreg_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colreg_package build --build-base /home/filip/ros2_ws/build/colreg_package/build install --record /home/filip/ros2_ws/build/colreg_package/install.log --single-version-externally-managed
